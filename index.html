@@ -2,36 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Cakes</title>
+    <title>Airbooking</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display|Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-  	<header class="page-header container">
+    <header class="page-header">
       <h1 class="visiable-hidden">Airbooking</h1>
-      <ul>
-        <li><a href="#">
+      <ul class="page-header__navigation">
+        <li><a class="page-header__navigation-burger" href="#">
           <p class="visiable-hidden">Click to see navigation of site</p>
         </a></li>
-        <li><a href="#">Airbooking</a></li>
-        <li><a href="#">
+        <li><a class="page-header__navigation-logo" href="#">
+          <p class="visiable-hidden">Airbooking</p></a></li>
+        <li><a class="page-header__navigation-loupa" href="#">
           <p class="visiable-hidden">Click to search by words</p>
         </a></li>
       </ul>
       <section class="social-and-brand-form">
         <ul class="header__social-links">
-          <li><a href="#">
+          <li><a class="header__social-links-facebook" href="#">
             <p class="visiable-hidden">Facebook</p>
           </a></li>
-          <li><a href="#">
+          <li><a class="header__social-links-twitter" href="#">
             <p class="visiable-hidden">Twitter</p>
           </a></li>
-          <li><a href="#">
+          <li><a class="header__social-links-vine" href="#">
             <p class="visiable-hidden">Vine</p>
           </a></li>
-          <li><a href="#">
+          <li><a class="header__social-links-instagram" href="#">
             <p class="visiable-hidden">Instagram</p>
           </a></li>
         </ul>
@@ -39,7 +41,7 @@
           <h2 class="brand-form__title">A Brand New Hotel Beyond Ordinary</h2>
           <form action="POST">
             <a class="brand-form__galery-link" href="#">Exploere IT</a>
-            <ul>
+            <ul class="brand-form__choise">
               <li class="brand-form__check-in">
                 <p class="check-in__title">Check in</p>
                 <input class="check-in__number" type="number" value="16" step="1" min="1" max="31"required>
@@ -88,7 +90,7 @@
                 </select>
               </li>
               <li class="brand-form__submit">
-                <input type="submit" value="check Availability">
+                <input class="brand-form__submit-button" type="submit" value="check Availability">
               </li>
             </ul>
           </form>
@@ -126,7 +128,7 @@
         </ul>
       </section>
       <section class="choice-best">
-        <img src="" alt="Комната">
+        <img src="image/best-room.jpg" width="992" height="754"  alt="Комната">
         <aritcle class="choice-best__description">
           <h2 class="choice-best__title">Explorer Your Best Room</h2>
           <p class="choice-best__about">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
@@ -152,31 +154,35 @@
       <section class="find-best-room">
         <article class="find-best-room__picture"></article>
         <article class="find-best-room__description">
-          <h2 class="find-best-room__title">Find Your Best Room Here</h2>
-          <p class="find-best-room__text-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-          <p class="find-best-room__text-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
-          <a class="find-best-room__link" href="#">Read More</a>
-        </article>
-      </section>
-      <section class="from-the-guest">
-        <h2>From The Guest</h2>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-        <article class="from-the-guest__card">
-          <img class="card__face" src="" alt="Andrew Strauss's face">
-          <div class="card__author">
-            <h3 class="card__author-name">Andrew Strauss</h3>
-            <p class="card__author-from">From New York, USA</p>
+          <div class="find-best-room__description-wrapper">
+            <h2 class="find-best-room__title">Find Your Best Room Here</h2>
+            <p class="find-best-room__text-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p class="find-best-room__text-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+            <a class="find-best-room__link" href="#">Read More</a>
           </div>
         </article>
       </section>
+      <section class="from-the-guest">
+        <div class="from-the-guest__wrapper">
+          <h2 class="from-the-guest__title">From The Guest</h2>
+          <p class="from-the-guest__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          <article class="from-the-guest__card">
+            <img class="card__face" src="image/face.jpg" alt="Andrew Strauss's face">
+            <div class="card__author">
+              <h3 class="card__author-name">Andrew Strauss</h3>
+              <p class="card__author-from">From New York, USA</p>
+            </div>
+          </article>
+        </div>
+      </section>
       <section class="keep-calm">
         <h2 class="keep-calm__title">Keep Clam And Enjoy Vaction</h2>
-        <a href="#">
+        <a class="keep-calm__button" href="#"><img src="image/triangle.png" width="46" height="53" alt="Click here">
           <p class="visiable-hidden">Click here to enjoy vaction</p>
         </a>
       </section>
       <section class="latest-news">
-        <h2>Latest News</h2>
+        <h2 class="latest-news__title">Latest News</h2>
         <ul class="latest-news__cards">
           <li class="latest-news__card">
             <div class="latest-news__sticker">
@@ -188,7 +194,7 @@
           </li>
           <li class="latest-news__card">
             <h3 class="latest-news__card-name">This is a slider post </h3>
-            <p latest-news__card-date>June 18, 2018</p>
+            <p class="latest-news__card-date">June 18, 2018</p>
             <div class="latest-news__sticker">
               <h3 class="sticker__title">This is a slider post</h3>
               <p class="sticker__date">June 18, 2018</p>
@@ -234,27 +240,29 @@
       </section>
     </main>
     <footer>
-      <section class="contacts-and-links">
-        <h2 class="contacts-and-links__title">Airbooking</h2>
-        <p class="contacts-and-links__description">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
-        <article class="contacts-and-links__adress">
+      <section class="footer-contacts-and-links">
+        <h2 class="footer-contacts-and-links__title">
+          <p class="visiable-hidden">Airbooking</p>
+        </h2>
+        <p class="footer-contacts-and-links__description">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+        <article class="footer-contacts-and-links__adress">
           <p class="contacts-and-links__adress-1">2345  Lyon Avenue Boston, MA, Massachusetts</p>
         </article>
-        <article class="contacts-and-links__phone-number">
+        <article class="footer-contacts-and-links__phone-number">
           <p class="contacts-and-links__phone-number-1">508-960-5584</p>
           <p class="contacts-and-links__phone-number-2">857-366-4240</p>
         </article>
       </section>
-      <section class="quick-links">
-        <h3 class="quick-links__title">Quick Links</h3>
-        <ul class="quick-links__cards">
-          <li><a class="quick-links__card" href="#">Accomodation</a></li>
-          <li><a class="quick-links__card" href="#">Noordwijk</a></li>
-          <li><a class="quick-links__card" href="#">Food & Drinks</a></li>
-          <li><a class="quick-links__card" href="#">Wellness</a></li>
-          <li><a class="quick-links__card" href="#">Beach Venues</a></li>
-          <li><a class="quick-links__card" href="#">Manifesto</a></li>
-          <li><a class="quick-links__card" href="#">Amenities</a></li>
+      <section class="footer-quick-links">
+        <h3 class="footer-quick-links__title">Quick Links</h3>
+        <ul class="footer-quick-links__cards">
+          <li><a class="footer-quick-links__card" href="#">Accomodation</a></li>
+          <li><a class="footer-quick-links__card" href="#">Noordwijk</a></li>
+          <li><a class="footer-quick-links__card" href="#">Food & Drinks</a></li>
+          <li><a class="footer-quick-links__card" href="#">Wellness</a></li>
+          <li><a class="footer-quick-links__card" href="#">Beach Venues</a></li>
+          <li><a class="footer-quick-links__card" href="#">Manifesto</a></li>
+          <li><a class="footer-quick-links__card" href="#">Amenities</a></li>
         </ul>
       </section>
       <section class="footer-social-links">
