@@ -1,0 +1,29 @@
+footer {
+	background-color: #454545;
+	padding-top: 91px;
+	padding-bottom: 85px;
+
+	.footer-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 1171px;
+		margin: 0 auto;
+	
+		.footer-contacts-and-links,
+		.footer-quick-links,
+		.footer-social-links {
+			width: 375px;
+		}
+	}
+
+	.footer-copywrite {
+		display: block;
+		margin: 0 auto;
+		margin-top: 57px;
+		font-size: 16px;
+		line-height: 36px;
+		color: #cfcfcf;
+		text-align: center;
+	}
+}

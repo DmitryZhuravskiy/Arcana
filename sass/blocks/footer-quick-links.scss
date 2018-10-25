@@ -1,0 +1,43 @@
+.footer-quick-links {
+	padding-left: 8px;
+	box-sizing: border-box;
+	
+	.footer-quick-links__title {
+		margin-top: 26px;
+		margin-bottom: 35px;
+		text-align: left;
+		font-size: 24px;
+		line-height: 24px;
+		font-family: "Gilda Display";
+		font-weight: 400;
+		color: #ffffff;
+	}
+		
+	.footer-quick-links__cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-left: 0;
+		
+		li {
+			width: 50%;
+			margin-bottom: 2px;
+
+			&:hover {
+				opacity: 0.5;
+			}
+
+			&:active {
+				opacity: 0.2;
+			}
+
+			.footer-quick-links__card {
+				text-align: left;
+				font-size: 16px;
+				line-height: 36px;
+				color: #cfcfcf;
+			}
+		}
+	}
+}

@@ -90,7 +90,7 @@
                 </select>
               </li>
               <li class="brand-form__submit">
-                <input class="brand-form__submit-button" type="submit" value="check Availability">
+                <button class="brand-form__submit-button" type="submit">check Availability</button>
               </li>
             </ul>
           </form>
@@ -128,11 +128,13 @@
         </ul>
       </section>
       <section class="choice-best">
-        <img src="image/best-room.jpg" width="992" height="754"  alt="Комната">
-        <aritcle class="choice-best__description">
-          <h2 class="choice-best__title">Explorer Your Best Room</h2>
-          <p class="choice-best__about">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
-        </aritcle>
+        <div class="choice-best__wrapper">
+          <img src="image/best-room.jpg" width="860" height="624"  alt="Комната">
+          <article class="choice-best__description">
+            <h2 class="choice-best__title">Explorer Your Best Room</h2>
+            <p class="choice-best__about">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero.</p>
+          </article>
+        </div>
       </section>
       <section class="our-services">
         <h2 class="our-services__title">Our Services</h2>
@@ -220,7 +222,7 @@
           </li>
           <li class="latest-news__card">
             <h3 class="latest-news__card-name">This is a slider post </h3>
-            <p latest-news__card-date>June 18, 2018</p>
+            <p class="latest-news__card-date">June 18, 2018</p>
             <div class="latest-news__sticker">
               <h3 class="sticker__title">This is a slider post</h3>
               <p class="sticker__date">June 18, 2018</p>
@@ -240,51 +242,53 @@
       </section>
     </main>
     <footer>
-      <section class="footer-contacts-and-links">
-        <h2 class="footer-contacts-and-links__title">
-          <p class="visiable-hidden">Airbooking</p>
-        </h2>
-        <p class="footer-contacts-and-links__description">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
-        <article class="footer-contacts-and-links__adress">
-          <p class="contacts-and-links__adress-1">2345  Lyon Avenue Boston, MA, Massachusetts</p>
-        </article>
-        <article class="footer-contacts-and-links__phone-number">
-          <p class="contacts-and-links__phone-number-1">508-960-5584</p>
-          <p class="contacts-and-links__phone-number-2">857-366-4240</p>
-        </article>
-      </section>
-      <section class="footer-quick-links">
-        <h3 class="footer-quick-links__title">Quick Links</h3>
-        <ul class="footer-quick-links__cards">
-          <li><a class="footer-quick-links__card" href="#">Accomodation</a></li>
-          <li><a class="footer-quick-links__card" href="#">Noordwijk</a></li>
-          <li><a class="footer-quick-links__card" href="#">Food & Drinks</a></li>
-          <li><a class="footer-quick-links__card" href="#">Wellness</a></li>
-          <li><a class="footer-quick-links__card" href="#">Beach Venues</a></li>
-          <li><a class="footer-quick-links__card" href="#">Manifesto</a></li>
-          <li><a class="footer-quick-links__card" href="#">Amenities</a></li>
-        </ul>
-      </section>
-      <section class="footer-social-links">
-        <h3 class="footer-social-links__title">Connect With Us</h3>
-        <ul class="footer-social-links__list">
-          <li><a class="footer-social-links__social-link" href="#">
-            <p class="visiable-hidden">We in Facebook</p>
-          </a></li>
-          <li><a class="footer-social-links__social-link" href="#">
-            <p class="visiable-hidden">We in Twitter</p>
-          </a></li>
-          <li><a class="footer-social-links__social-link" href="#">
-            <p class="visiable-hidden">We in Linkedin</p>
-          </a></li>
-          <li><a class="footer-social-links__social-link" href="#">
-            <p class="visiable-hidden">We in Youtube</p>
-          </a></li>
-          <li><a class="footer-social-links__social-link" href="#">
-            <p class="visiable-hidden">WE in Instagram</p>
-          </a></li>
-        </ul>
-      </section>
+      <div class="footer-wrapper">
+        <section class="footer-contacts-and-links">
+          <h2 class="footer-contacts-and-links__title">
+            <p class="visiable-hidden">Airbooking</p>
+          </h2>
+          <p class="footer-contacts-and-links__description">Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p>
+          <article class="footer-contacts-and-links__adress">
+            <p class="contacts-and-links__adress-1">2345  Lyon Avenue Boston, MA, Massachusetts</p>
+          </article>
+          <article class="footer-contacts-and-links__phone-number">
+            <p class="contacts-and-links__phone-number-1">508-960-5584</p>
+            <p class="contacts-and-links__phone-number-2">857-366-4240</p>
+          </article>
+        </section>
+        <section class="footer-quick-links">
+          <h3 class="footer-quick-links__title">Quick Links</h3>
+          <ul class="footer-quick-links__cards">
+            <li><a class="footer-quick-links__card" href="#">Accomodation</a></li>
+            <li><a class="footer-quick-links__card" href="#">Noordwijk</a></li>
+            <li><a class="footer-quick-links__card" href="#">Food & Drinks</a></li>
+            <li><a class="footer-quick-links__card" href="#">Wellness</a></li>
+            <li><a class="footer-quick-links__card" href="#">Beach Venues</a></li>
+            <li><a class="footer-quick-links__card" href="#">Manifesto</a></li>
+            <li><a class="footer-quick-links__card" href="#">Amenities</a></li>
+          </ul>
+        </section>
+        <section class="footer-social-links">
+          <h3 class="footer-social-links__title">Connect With Us</h3>
+          <ul class="footer-social-links__list">
+            <li class="footer-social-links__social-link"><a class="social-link" href="#">
+              <p class="visiable-hidden">We in Facebook</p>
+            </a></li>
+            <li class="footer-social-links__social-link"><a class="social-link" href="#">
+              <p class="visiable-hidden">We in Twitter</p>
+            </a></li>
+            <li class="footer-social-links__social-link"><a class="social-link" href="#">
+              <p class="visiable-hidden">We in Linkedin</p>
+            </a></li>
+            <li class="footer-social-links__social-link"><a class="social-link" href="#">
+              <p class="visiable-hidden">We in Youtube</p>
+            </a></li>
+            <li class="footer-social-links__social-link"><a class="social-link" href="#">
+              <p class="visiable-hidden">WE in Instagram</p>
+            </a></li>
+          </ul>
+        </section>
+      </div>
       <p class="footer-copywrite">© 2018 Airbooking - All Rights Reserved</p>
     </footer>
   </body>

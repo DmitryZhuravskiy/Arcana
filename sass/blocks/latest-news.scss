@@ -1,0 +1,134 @@
+.latest-news {
+	padding-top: 33px;
+	padding-bottom: 100px;
+
+	.latest-news__title {
+		margin-bottom: 85px;
+		font-size: 72px;
+		text-align: center;
+		font-family: "Gilda Display";
+		font-weight: 400;
+		color: #686868;
+	}
+
+	.latest-news__cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-left: 0px;
+		width: 1171px;
+		margin: 0 auto;
+
+		.latest-news__card {
+			width: 371px;
+			height: 294px;
+			margin-bottom: 28px;
+			position: relative;
+
+			.latest-news__sticker {
+				position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				padding-left: 25px;
+				box-sizing: border-box;
+			}
+
+			.sticker__title {
+				margin-top: 20px;
+				margin-bottom: 23px;
+				font-size: 24px;
+				font-family: "Gilda Display";
+				font-weight: 400;
+				text-align: left;
+				color: #686868;
+			}
+
+			.sticker__date {
+				marign-bottom: 38px;
+				font-size: 14px;
+				text-align: left;
+				color: #a2a2a2;
+			}
+
+			.sticker__description {
+				padding-top: 7px;
+				margin-bottom: 40px;
+				font-size: 16px;
+				line-height: 30px;
+				font-weight: 300;
+				text-align: left;
+				color: #a2a2a2;
+			}
+
+			.sticker__link {
+				padding: 12px 20px;
+				font-family: "Open Sans";
+				background-color: #0e6fb3;
+				color: #ffffff;
+			}
+		}
+
+		.latest-news__card:nth-of-type(1) {
+			background: url("../image/latest-news-1.jpg");
+		}
+
+		.latest-news__card:nth-of-type(2) {
+			background: url("../image/latest-news-2.jpg");
+		}
+
+		.latest-news__card:nth-of-type(3) {
+			background: url("../image/latest-news-3.jpg");
+		}
+
+		.latest-news__card:nth-of-type(5) {
+			background: url("../image/latest-news-5.jpg");
+		}
+
+		.latest-news__card:nth-of-type(2),
+		.latest-news__card:nth-of-type(5) {
+
+			.latest-news__card-name {
+				color: white;
+				margin-left: 25px;
+				margin-top: 210px;
+				margin-bottom: 3px;
+				font-size: 24px;
+				font-family: "Gilda Display";
+				font-weight: 400;
+				text-align: left;
+			}
+
+			.latest-news__card-date {
+				font-family: "Open Sans";
+				font-size: 14px;
+				padding-left: 6px;
+				margin-top: 10px;
+				margin-left: 25px;
+				text-align: left;
+				color: #ffffff;
+			}
+		}
+
+		.latest-news__card:nth-of-type(4),
+		.latest-news__card:nth-of-type(6) {
+
+			.latest-news__sticker {
+				display: block;
+
+				.sticker__title {
+					margin-top: 17px;
+					margin-bottom: 7px;
+				}
+
+				.sticker__date {
+					margin: 0;
+					margin-left: 3px;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
+

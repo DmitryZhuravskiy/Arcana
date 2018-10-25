@@ -1,0 +1,45 @@
+.choice-best {
+	padding: 160px 0;
+	margin-top: 90px;
+	background: #eff4f8;
+
+	.choice-best__wrapper {
+		position: relative;
+		width: 1171px;
+		margin: 0 auto;
+		background: #eff4f8;
+	}
+
+	img {
+		border: 5px white solid;
+		background-size: cover;
+		box-shadow: 0px 3px 65px 0px rgba(181, 203, 221, 0.8);
+	}
+
+	.choice-best__description {
+		position: absolute;
+		top: 110px;
+		right: 0;
+		width: 440px;
+		height: 390px;
+		padding: 0px 50px 30px 45px;
+		background: white;
+
+		.choice-best__title {
+			margin-top: 42px;
+			margin-bottom: 20px;
+			font-size: 60px;
+			color: #686868;
+			font-family: "Gilda Display";
+			font-weight: 400;
+		}
+
+		.choice-best__about {
+			color: #7d7d7d;
+			font-size: 16px;
+			font-family: "Open Sans";
+			font-weight: 300;
+			line-height: 30px;
+		}
+	}
+}
