@@ -3,14 +3,14 @@
 	box-sizing: border-box;
 	
 	.footer-quick-links__title {
-		margin-top: 26px;
 		margin-bottom: 35px;
-		text-align: left;
+		margin-top: 26px;
 		font-size: 24px;
 		line-height: 24px;
 		font-family: "Gilda Display";
 		font-weight: 400;
 		color: #ffffff;
+		text-align: left;
 	}
 		
 	.footer-quick-links__cards {
@@ -33,9 +33,9 @@
 			}
 
 			.footer-quick-links__card {
-				text-align: left;
 				font-size: 16px;
 				line-height: 36px;
+				text-align: left;
 				color: #cfcfcf;
 			}
 		}

@@ -2,12 +2,12 @@
 
 	.footer-social-links__title {
 		margin-bottom: 50px;
-		text-align: left;
 		font-family: "Gilda Display";
 		font-weight: 400;
 		font-size: 24px;
 		line-height: 24px;
 		color: #ffffff;
+		text-align: left;
 	}
 		
 	.footer-social-links__list {
@@ -20,8 +20,8 @@
 		
 		.footer-social-links__social-link {
 			display: block;
-			margin-right: 25px;
 			ailgn-self: center;
+			margin-right: 25px;
 			cursor: pointer;
 
 			&:hover {

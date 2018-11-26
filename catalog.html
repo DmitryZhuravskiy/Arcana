@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Arcana</title>
+    <title>Arcana - catalog</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
@@ -39,45 +39,87 @@
         <li><a href="#">Outerwear</a></li>
         <li><a href="#">Pans</a></li>
       </ul>
-      <section class="page-header__slider">
-        <article class="page-header__slide--1">
-          <h2>Tees & Tops</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-          <a href="#">Discover More</a>
-        </article>
-      </section>
     </header>
     <main>
-      <ul class="how-we-work">
-        <li class="how-we-work__discount-system">
-          <h3>Discount system</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
-        </li>
-        <li class="how-we-work__free-delivery">
-          <h3>Free delivery</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
-        </li>
-        <li class="how-we-work__24/7">
-          <h3>Support 24/7</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
-        </li>
-      </ul>
-      <ul class="clothing-catalog">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Blouses</a></li>
-        <li><a href="#">T-Shirts</a></li>
-        <li><a href="#">Outerwear</a></li>
-      </ul>
+     <form class="catalog__form" action="post">
+       <select name="main-select" id="select-part" multiple>
+         <option value="top" selected>Top</option>
+         <option value="bottom">Bottom</option>
+         <option value="hat">Hat</option>
+       </select>
+       <select name="secondary-select" id="select-secondary-part" multiple>
+         <option value="top" selected>T-shirt & Blouses</option>
+         <option value="bottom">Outerwear</option>
+         <option value="hat">Hat</option>
+       </select>
+       <P class="catalog-item__blouses">Blouses</P>
+       <P class="catalog-item-subtipe__shirts">Shirts</P>
+       <P class="catalog-item__t-shirt">T-Shirts</P>
+       <p class="catalog-item__secondary-type">T-shirt</p>
+       <p class="catalog-item__secondary-type">Outerwear</p>
+       <p>Filter by</p>
 
-      <section class="sales-catalog">
-        <h3>Top Trending</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-        <article class="sales-catalog__sorting">
-          <button>New products</button>
-          <button>Prices drop</button>
-          <button>Best sales</button>
+        <fieldset class="catalog-items__categories">
+          <h3>Categories</h3>
+          <input class="checkbox-categories" type="checkbox" name="dresses" id="categories-1">
+          <label class="categories-type-item" for="categories-1">Dresses</label>
+
+          <input class="checkbox-categories" type="checkbox" name="blouses" id="categories-2" checked>
+          <label class="categories-type-item" for="categories-2">Blouses</label>
+
+          <input class="checkbox-categories" type="checkbox" name="outerwear" id="categories-3">
+          <label class="categories-type-item" for="categories-3">Outerwear</label>
+        </fieldset>
+
+        <fieldset class="catalog-items__color">
+          <h3>Color</h3>
+          <input class="checkbox-color" type="checkbox" name="beige" id="color-1">
+          <label class="differences-color" for="color-1">Beige <span>(1)</span></label>
+
+          <input class="checkbox-color" type="checkbox" name="black" id="color-2" checked>
+          <label class="differences-color" for="color-2">Black <span>(2)</span></label>
+
+          <input class="checkbox-color" type="checkbox" name="yellow" id="color-3">
+          <label class="differences-color" for="color-3">Yellow <span>(4)</span></label>
+
+          <input class="checkbox-color" type="checkbox" name="white" id="color-4">
+          <label class="differences-color" for="color-4">White <span>(2)</span></label>
+        </fieldset>
+
+        <fieldset class="catalog-items__categories">
+          <h3>Compositions</h3>
+          <input class="checkbox-compositions" type="checkbox" name="cotton" id="compositions-1">
+          <label class="differences-compositions" for="compositions-1">Cotton <span>(3)</span></label>
+
+          <input class="checkbox-compositions" type="checkbox" name="polyester" id="compositions-2" checked>
+          <label class="differences-compositions" for="compositions-2">Polyester <span>(2)</span></label>
+
+          <input class="checkbox-compositions" type="checkbox" name="viscose" id="compositions-3">
+          <label class="differences-compositions" for="compositions-3">Viscose <span>(2)</span></label>
+        </fieldset>
+        <button class="catalog__clean-button">
+          Clean all
+        </button>
+      </form>
+      <section class="catalog__select-items">
+        <h2>Dresses</h2>
+        <p>Find your favorites dresses from our wide choice of evening, casual or summer dresses. We offer dresses for every day, every style and everyoccasion.</p>
+        <div class="catalog__sorting">
+         <p class="catalog__sorting-number">There are 5 products</p>
+          <label class="differences-compositions" for="compositions-3">Sort by:</label>
+          <select name="select__sort-by" id="sort-by">
+            <option value="top" selected>Price, high to low</option>
+            <option value="bottom">Price, low to high</option>
+          </select>
+        </div>
+        <article class="catalog__filters">
+          <p class="catalog__filters-active">Active filters</p>
+          <div class="catalog__casual-dresses">
+            <p class="catalog__filters">Casual dresses</p>
+            <button class="catalog__casual-dresses-close"></button>
+          </div>
         </article>
-        <ul class="sales-catalog__pins">
+        <ul class="catalog__pins">
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
               <p class="pin-picture__new">New</p>
@@ -154,74 +196,34 @@
             <h4>Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
+          <li class="sales-catalog__pin">
+            <div class="sales-catalog__pin-picture">
+              <p class="pin-picture__discount">-20%</p>
+              <p class="visially-hidden">Beige jacket</p>
+            </div>
+            <h4>Excepteur sint occaecat cupidatat</h4>
+            <p class="sales-catalog__pin-price">$ 199.00<span class="pin-price__old-price">$ 299.00</span></p>
+          </li>
+          <li class="sales-catalog__pin">
+            <div class="sales-catalog__pin-picture">
+              <p class="visially-hidden">Sailor's shirt</p>
+            </div>
+            <h4>Excepteur sint occaecat cupidatat</h4>
+            <p class="sales-catalog__pin-price">$ 199.00</p>
+          </li>
         </ul>
-        <a href="#">All products</a>
-      </section>
-      <section class="bags-and-shoes">
-        <article class="bags-and-shoes__picture">
-        </article>
-        <article class="bags-and-shoes__content">
-          <h4 class="bags-and-shoes__title">Bags & Shoes</h4>
-          <p class="bags-and-shoes__description">Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
-          <a class="bags-and-shoes__link" href="#">Discovery more</a>
-        </article>
-      </section>
-      <ul class="brand-links">
-        <li>
-          <a href="#">
-            <img src="sisley-logo.png">
-            <p class="visially-hidden">Sisley</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="wrangler-logo.png">
-            <p class="visially-hidden">Wrangler</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="fred-perry-logo.png">
-            <p class="visially-hidden">Fred Perry</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="levi's-logo.png">
-            <p class="visially-hidden">Levi's</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="jack-jones-logo.png">
-            <p class="visially-hidden">Jack Jones</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="lacoste-logo.png">
-            <p class="visially-hidden">Lacoste</p>
-          </a>
-        </li>
-      </ul>
-      <ul class="instagram">
-        <li class="instagram--1"></li>
-        <li class="instagram--2"></li>
-        <li class="instagram--3"></li>
-        <li class="instagram--4"></li>
-        <li class="instagram--5"></li>
-        <li class="instagram--6"></li>
-        <li class="instagram--logo">
-          <p class="visially-hidden">#Instagram</p>
-        </li>
-      </ul>
-      <section class="map">
-        <article class="map__pin">
-          <p class="map__pin-adress">Alterego, 1 Infinite Loop, Cupertino, CA 95014</p>
-          <a class="tel" href="#">8 - 800 - 2000 - 3000</a>
-          <a class="mail" href="#">demo@demo.com</a>
-          <p class="map__timing">Mon. - Sun: 09:00 - 19:00</p>
-        </article>
+        <div class="bottom-navigation">
+          <p class="bottom-navigation__numbers">Showing 1-7 of 7 item(s)</p>
+          <ul>
+            <li><a class="page-number" href="#">Previous</a></li>
+            <li><a class="page-number" href="#">1</a></li>
+            <li><a class="page-number page-number--arctive" href="#">2</a></li>
+            <li><a class="page-number" href="#">3</a></li>
+            <li><a class="page-number" href="#">4</a></li>
+            <li><a class="page-number" href="#">5</a></li>
+            <li><a class="page-number" href="#">Next</a></li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>

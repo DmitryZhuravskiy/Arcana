@@ -1,17 +1,17 @@
 .our-rooms {
 	display: block;
 	width: 100%;
+	min-width: 1170px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	min-width: 1170px;
 
 	.our-rooms__title {
 		margin: 0 auto;
-		margin-top: 100px;
 		margin-bottom: 73px;
+		margin-top: 100px;
 		text-align: center;
-		font-size: 72px;
 		font-family: "Gilda Display";
+		font-size: 72px;
 		font-weight: 400;
 		color: #686868;
 	}
@@ -57,12 +57,12 @@
 		}
 
 		.our-rooms__type {
-			margin: 0 auto;
-			margin-top: 158px;
 			width: 141px;
 			padding: 9px 0;
+			margin: 0 auto;
+			margin-top: 158px;
 			background: #c19b76;
-			color: white;
+			color: #ffffff;
 			text-align: center;
 			text-transform: uppercase;
 		}
@@ -70,7 +70,7 @@
 		.our-rooms__price {
 			margin: 0 auto;
 			margin-top: 18px;
-			color: white;
+			color: #ffffff;
 			text-align: center;
 			text-transform: uppercase;
 		}

@@ -67,7 +67,6 @@
 			width: 730px;
 			margin: 0 auto;
 			margin-top: 214px;
-			margin-botton: 67px;
 			font-size: 81px;
 			font-family: "Gilda Display";
 			font-weight: 400;
@@ -91,7 +90,7 @@
 				border-radius: 40px;
 				font-size: 18px;
 				text-transform: uppercase;
-				background: white;
+				background: #ffffff;
 				color: #686868;
 			}
 
@@ -112,7 +111,7 @@
 					background: #ffffff;
 					color: #939393;
 				}
-					
+
 				.check-in__title,
 				.check-out__title,
 				.guest-number__title {
@@ -120,9 +119,9 @@
 					padding-right: 15px;
 					margin-bottom: 0px;
 					text-transform: uppercase;
-					text-align: center;
 					font-size: 16px;
 					color: #939393;
+					text-align: center;
 				}
 
 				.check-in__number,
@@ -130,11 +129,11 @@
 				.guest-number__number {
 					margin-top: -4px;
 					margin-bottom: 0px;
+					border: none;
+					font-family: "Gilda Display";
 					font-size: 89px;
 					color: #939393;
 					text-align: center;
-					border: none;
-					font-family: "Gilda Display";
 				}
 
 				.check-in__select-date,
@@ -144,15 +143,15 @@
 					flex-direction: row;
 					justify-content: center;
 					max-width: 90px;
+					border: none;
 					text-transform: uppercase;
+					font-family: "Gilda Display";
 					font-size: 24px;
-					font-family: "GildaDisplay";
 					font-weight: 400;
 					marign: 0 auto;
 					margin-top: 0;
 					margin-left: 70px;
 					color: #939393;
-					border: none;
 				}
 			}
 
@@ -163,6 +162,8 @@
 					width: 253px;
 					height: 100%;
 					padding: 0 20px;
+					border: none;
+					box-sizing: border-box;
 					font-size: 30px;
 					line-height: 36px;
 					background: #0e6fb3;
@@ -170,8 +171,6 @@
 					vertical-align: middle;
 					text-align: center;
 					text-transform: uppercase;
-					border: none;
-					box-sizing: border-box;
 					cursor: pointer;
 				}
 			}
