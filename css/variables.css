@@ -1,3 +1,16 @@
+body {
+  min-width: 1920px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 20px;
+  color: #7f7f7f; }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=variables.css.map */
