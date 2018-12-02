@@ -1,2 +1,15 @@
+.page-header {
+	min-height: 900px;
+	background: url(../image/header-background.jpg);
+	border-bottom: 1px #d4d4d4 solid;
+	
+	.page-header__wrapper {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
 
-
+.page-header--catalog {
+	min-height: 160px;
+	background-image: none;
+}

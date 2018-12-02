@@ -1,1 +1,65 @@
+.page-header__hidden-menus {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
+	.hidden-menus__menu-and-search {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+
+		.hidden-menus__menu {
+			width: 18px;
+			height: 12px;
+			background: url("../image/burger-icon.png");
+			cursor: pointer;
+		}
+
+		.hidden-menus__search {
+			width: 18px;
+			height: 18px;
+			background: url("../image/search-icon.png");
+			cursor: pointer;
+		}
+	}
+
+	.hidden-menus__logo {
+		width: 187px;
+		height: 18px;
+		background: url("../image/logo.png");
+		cursor: pointer;
+	}
+
+	.hidden-menus__social-and-bag {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+		.hidden-menus__social {
+			width: 15px;
+			height: 17px;
+			background: url(../image/social-icon.png);
+			cursor: pointer;
+		}
+
+		.hidden-menus__bag {
+			position: relative;
+			width: 20px;
+			height: 19px;
+			background: url("../image/portfolio-icon.png");
+			cursor: pointer;
+
+			.hidden-menus__number-of-bag {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				font-size: 7px;
+				background-color: black;
+				color: white;
+			}	
+		}
+	}
+}

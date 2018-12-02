@@ -1,0 +1,60 @@
+.bags-and-shoes {
+	background: #f2f2f2;
+	display: flex;
+	flex-direction: row;
+	min-height: 630px;
+
+	.bags-and-shoes__picture {
+		flex-grow: 0;
+		width: 958px;
+		height: 630px;
+		background: url('../image/bags-and-shoes.png');
+	}
+
+	.bags-and-shoes__content {
+		flex-grow: 25;
+		padding: 185px 0;
+
+		.bags-and-shoes__title {
+			position: relative;
+			font-size: 42px;
+			text-align: center;
+			color: black;
+
+			&:before {
+				position: absolute;
+				bottom: 20px;
+				left: calc(50% - 52px);
+				width: 104px;
+				height: 1px;
+				background: #cfcfcf;
+			}
+		}
+
+		.bags-and-shoes__description {
+			margin-bottom: 30px;
+			font-size: 13px;
+			line-height: 20px;
+			color: #929292;
+			text-align: center;
+		}
+
+		.bags-and-shoes__link {
+			display: block;
+			width: 194px;
+			padding: 23px 0;
+			margin: 0 auto;
+			font-size: 11px;
+			line-height: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			color: black;
+			border: 1px black solid;
+
+			&:hover {
+				background: black;
+				color: white;
+			}
+		}
+	}
+}

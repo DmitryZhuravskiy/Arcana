@@ -1,0 +1,45 @@
+.instagram {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+
+	.instagram__photo {
+		width: 320px;
+		height: 320px;
+		flex-grow: 1;
+	}
+
+	.instagram__photo--1 {
+		background: url(../image/instagram-1.jpg);
+	}
+
+	.instagram__photo--2 {
+		background: url(../image/instagram-2.jpg);
+	}
+
+	.instagram__photo--3 {
+		background: url(../image/instagram-3.jpg);
+	}
+
+	.instagram__photo--4 {
+		background: url(../image/instagram-4.jpg);
+	}
+
+	.instagram__photo--5 {
+		background: url(../image/instagram-5.jpg);
+	}
+
+	.instagram__photo--6 {
+		background: url(../image/instagram-6.jpg);
+	}
+
+	.instagram__logo {
+		width: 243px;
+		height: 37px;
+		position: absolute;
+		top: 140px;
+		left: calc(50% - 122px);
+		background: url("../image/instagram-logo.png");
+	}
+}

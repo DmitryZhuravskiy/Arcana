@@ -10,57 +10,66 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <section class="page-header__hidden-menus">
-        <article>
-          <div>
-            <p class="visially-hidden">Click to open menu</p>
+    <header class="page-header page-header--catalog">
+      <div class="page-header__wrapper">
+        <section class="page-header__hidden-menus">
+          <article class="hidden-menus__menu-and-search">
+            <div class="hidden-menus__menu">
+              <p class="visially-hidden">Click to open menu</p>
+            </div>
+            <div class="hidden-menus__search">
+              <p class="visially-hidden">Click to search on site</p>
+            </div>
+          </article>
+          <div class="hidden-menus__logo">
+            <p class="visially-hidden">Arcana</p>
           </div>
-          <div>
-            <p class="visially-hidden">Click to search on site</p>
-          </div>
-        </article>
-        <p>Arcana</p>
-        <article>
-          <div>
-            <p class="visially-hidden">Click to subscribe in social</p>
-          </div>
-          <div>
-            <p class="visially-hidden">Click to see your bag</p>
-            <p class="hidden-menus__number-of-bag">3</p>
-          </div>
-        </article>
-      </section>
-      <ul class="page-header__breadcrumbs">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Blouses</a></li>
-        <li><a href="#">Tees & Tops</a></li>
-        <li><a href="#">T-Shirts</a></li>
-        <li><a href="#">Outerwear</a></li>
-        <li><a href="#">Pans</a></li>
-      </ul>
+          <article class="hidden-menus__social-and-bag">
+            <div class="hidden-menus__social">
+              <p class="visially-hidden">Click to subscribe in social</p>
+            </div>
+            <div class="hidden-menus__bag">
+              <p class="visially-hidden">Click to see your bag</p>
+              <p class="hidden-menus__number-of-bag">3</p>
+            </div>
+          </article>
+        </section>
+        <ul class="page-header__breadcrumbs">
+          <li class="page-header__breadcrumbs-link"><a href="#">Dresses</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Blouses</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Tees & Tops</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">T-Shirts</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Outerwear</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Pans</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main-catalog">
      <form class="catalog__form" action="post">
-       <select name="main-select" id="select-part" multiple>
-         <option value="top" selected>Top</option>
-         <option value="bottom">Bottom</option>
-         <option value="hat">Hat</option>
-       </select>
-       <select name="secondary-select" id="select-secondary-part" multiple>
-         <option value="top" selected>T-shirt & Blouses</option>
-         <option value="bottom">Outerwear</option>
-         <option value="hat">Hat</option>
-       </select>
-       <P class="catalog-item__blouses">Blouses</P>
-       <P class="catalog-item-subtipe__shirts">Shirts</P>
-       <P class="catalog-item__t-shirt">T-Shirts</P>
-       <p class="catalog-item__secondary-type">T-shirt</p>
-       <p class="catalog-item__secondary-type">Outerwear</p>
-       <p>Filter by</p>
+      <ul>
+        <li class="catalog-item catalog-item__top">Top</li>
+        <li class="catalog-item catalog-item__top-subtipe">
+          <ul>
+            <li class="catalog__subtipe">Blouses</li>
+            <li class="catalog__subtipe">Shirts</li>
+            <li class="catalog__subtipe">T-Shirts</li>
+          </ul>
+        </li>
+        <li class="catalog-item catalog-item__t-shirt-and-blouses--active">T-Shirt & Blouses</li>
+        <li class="catalog-item catalog-item__top-subtipe catalog-item__top-subtipe--active">
+          <ul>
+            <li class="catalog__subtipe">Blouses</li>
+            <li class="catalog__subtipe">Shirts</li>
+            <li class="catalog__subtipe">T-Shirts</li>
+          </ul>
+        </li>
+        <li class="catalog-item catalog-item__t-shirt">T-Shirts</li>
+        <li class="catalog-item catalog-item__outerwear">Outerwear</li>
+      </ul>
+       <p class="catalog__filter-title">Filter by</p>
 
         <fieldset class="catalog-items__categories">
-          <h3>Categories</h3>
+          <h3 class="catalog-items__categorie-title">Categories</h3>
           <input class="checkbox-categories" type="checkbox" name="dresses" id="categories-1">
           <label class="categories-type-item" for="categories-1">Dresses</label>
 
@@ -72,22 +81,22 @@
         </fieldset>
 
         <fieldset class="catalog-items__color">
-          <h3>Color</h3>
+          <h3 class="catalog-items__color-title">Color</h3>
           <input class="checkbox-color" type="checkbox" name="beige" id="color-1">
-          <label class="differences-color" for="color-1">Beige <span>(1)</span></label>
+          <label class="differences-color differences-color--beige" for="color-1">Beige <span>(1)</span></label>
 
           <input class="checkbox-color" type="checkbox" name="black" id="color-2" checked>
-          <label class="differences-color" for="color-2">Black <span>(2)</span></label>
+          <label class="differences-color differences-color--black" for="color-2">Black <span>(2)</span></label>
 
           <input class="checkbox-color" type="checkbox" name="yellow" id="color-3">
-          <label class="differences-color" for="color-3">Yellow <span>(4)</span></label>
+          <label class="differences-color differences-color--yellow" for="color-3">Yellow <span>(4)</span></label>
 
           <input class="checkbox-color" type="checkbox" name="white" id="color-4">
-          <label class="differences-color" for="color-4">White <span>(2)</span></label>
+          <label class="differences-color differences-color--white" for="color-4">White <span>(2)</span></label>
         </fieldset>
 
         <fieldset class="catalog-items__compositions">
-          <h3>Compositions</h3>
+          <h3 class="catalog-items__compositions-title">Compositions</h3>
           <input class="checkbox-compositions" type="checkbox" name="cotton" id="compositions-1">
           <label class="differences-compositions" for="compositions-1">Cotton <span>(3)</span></label>
 
@@ -102,11 +111,11 @@
         </button>
       </form>
       <section class="catalog__select-items">
-        <h2>Dresses</h2>
-        <p>Find your favorites dresses from our wide choice of evening, casual or summer dresses. We offer dresses for every day, every style and everyoccasion.</p>
+        <h2 class="select-items__title">Dresses</h2>
+        <p class="select-items__description">Find your favorites dresses from our wide choice of evening, casual or summer dresses. We offer dresses for every day, every style and everyoccasion.</p>
         <div class="catalog__sorting">
-         <p class="catalog__sorting-number">There are 5 products</p>
-          <label class="differences-compositions" for="compositions-3">Sort by:</label>
+          <p class="catalog__sorting-number">There are 5 products</p>
+          <label for="sort-by">Sort by:</label>
           <select name="select__sort-by" id="sort-by">
             <option value="top" selected>Price, high to low</option>
             <option value="bottom">Price, low to high</option>
@@ -227,54 +236,59 @@
       </section>
     </main>
     <footer>
-      <section>
-        <article>
-          <h2>Arcana</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+      <section class="footer-container">
+        <article class="footer__title-and-social">
+          <h2 class="footer__title">
+            <p class="visially-hidden">Arcana</p>
+          </h2>
+          <p class="footer__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <ul class="social-links">
-            <li><a href="#"><img src="facebook-icon.png" alt="facebook"></a></li>
-            <li><a href="#"><img src="instagram-icon.png" alt="instagram"></a></li>
-            <li><a href="#"><img src="pn-icon.png" alt="pn"></a></li>
-            <li><a href="#"><img src="twitter-icon.png" alt="twitter"></a></li>
+            <li class="social-link"><a href="#"><img src="image/facebook-icon.png" alt="facebook"></a></li>
+            <li class="social-link"><a href="#"><img src="image/instagram-icon.png" alt="instagram"></a></li>
+            <li class="social-link"><a href="#"><img src="image/pn-icon.png" alt="pn"></a></li>
+            <li class="social-link"><a href="#"><img src="image/twitter-icon.png" alt="twitter"></a></li>
           </ul>
-          <form action="post">
-            <input type="text" placeholder="Enter your e-mail">
-            <input type="submit" value="Subscribe">
+          <form class="social-links__form" action="post">
+            <input class="social-links__form-email" type="text" placeholder="Enter your e-mail">
+            <input class="social-links__form-subscribe" type="submit" value="Subscribe">
           </form>
         </article>
-        <article>
-          <h3>Products</h3>
-          <ul>
-            <li><a href="#">Prices drop</a></li>
-            <li><a href="#">New products</a></li>
-            <li><a href="#">Best sales</a></li>
+        <article class="footer__products-links">
+          <h3 class="products-links__title">Products</h3>
+          <ul class="products-links__box">
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">Prices drop</a></li>
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">New products</a></li>
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">Best sales</a></li>
           </ul>
         </article>
-        <article>
-          <h3>Information</h3>
-          <ul>
-            <li><a href="#">Delivery Secu</a></li>
-            <li><a href="#">Legal Notice</a></li>
-            <li><a href="#">Terms and conditions of use</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Secure payment</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Stores</a></li>
+        <article class="footer__information-links">
+          <h3 class="information-links__title">Information</h3>
+          <ul class="information-links__box">
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Delivery Secu</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Legal Notice</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Terms and conditions of use</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">About us</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Secure payment</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Contact us</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Sitemap</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Stores</a></li>
           </ul>
         </article>
-        <article>
-          <h3>Your account</h3>
-          <ul>
-            <li><a href="#">Addresses</a></li>
-            <li><a href="#">Credit slips</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Personal info</a></li>
+        <article class="footer__your-account">
+          <h3 class="your-account__title">Your account</h3>
+          <ul class="your-account__box">
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Addresses</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Credit slips</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Orders</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Personal info</a></li>
           </ul>
         </article>
       </section>
-      <section class="payment"></section>
+      <section class="footer__payment">
+        <img src="image/pay-method-icons.png" alt="Methods to pay">
+      </section>
     </footer>
+
     <section class="modal-content modal-content__basket">
       <h2>Shopping cart</h2>
       <form action="post">
@@ -332,10 +346,12 @@
         <p class="visially-hidden">Close to bag of goods</p>
       </button>
     </section>
-    <section class="modal-content__search">
+
+    <section class="modal-content modal-content__search">
       <input type="text">
     </section>
-    <ul class="modal-content__social">
+
+    <ul class="modal-content modal-content__social">
       <li class="modal-content__social-facebook">
         <a href="#">
           <img src="facebook-icon.png" alt="Facebook">
@@ -361,12 +377,14 @@
         </a>
       </li>
     </ul>
-    <ul class="modal-content__language-selector">
+
+    <ul class="modal-content modal-content__language-selector">
       <li><a class="modal-content__language modal-content__language-active" href="#">English</a></li>
       <li><a class="modal-content__language" href="#">French</a></li>
       <li><a class="modal-content__language" href="#">Spain</a></li>
     </ul>
-    <section class="modal-content__menu">
+    
+    <section class="modal-content modal-content__menu">
       <article class="modal-content__menu-navigation">
         <div>
           <h3>T-Shirts & Blouses</h3>
@@ -393,7 +411,7 @@
           </ul>
         </div>
       </article>
-      <ul class="modal-content__menu-pins">
+      <ul class="modal-content modal-content__menu-pins">
         <li class="menu-pin menu-pin--1">
           <div class="menu-pins__picture menu-pins__picture--1"></div>
           <div>
@@ -416,7 +434,7 @@
           </div>
         </li>
       </ul>
-      <article class="modal-content__menu-logotypes">
+      <article class="modal-content modal-content__menu-logotypes">
         <div><img src="logotype.png" alt="logotype"></div>
         <div><img src="logotype.png" alt="logotype"></div>
         <div><img src="logotype.png" alt="logotype"></div>

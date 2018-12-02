@@ -1,0 +1,23 @@
+.footer__information-links {
+
+	.information-links__title {
+		margin-bottom: 45px;
+		font-size: 16px;
+		color: black;
+	}
+
+	.information-links__box {
+
+		.footer__information-link {
+			padding-bottom: 15px;
+
+			.information-link__just-link {
+				color: #929292;
+
+				&:hover {
+					color: black;
+				}
+			}
+		}
+	}
+}

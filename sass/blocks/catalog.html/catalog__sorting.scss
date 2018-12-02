@@ -1,0 +1,81 @@
+.catalog__sorting {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	background: #f2f2f2;
+
+	.catalog__sorting-number {
+		padding-left: 10px;
+		flex-grow: 25;
+		color: black;
+	}
+
+	label {
+		flex-grow: 0;
+		margin-right: 3px;
+
+	}
+
+	select {
+		flex-grow: 0;
+		border: none;
+		background-color: transparent;
+	}
+}
+
+.catalog__filters {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.catalog__filters-active {
+		width: 111px;
+		color: black;
+		text-transform: uppercase;
+	}
+
+	.catalog__casual-dresses {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 141px;
+		padding: 10px;
+		box-sizing: border-box;
+		background-color: black;
+		text-transform: uppercase;
+		color: white;
+		font-size: 9px;
+
+		.catalog__casual-dresses-close {
+			position: relative;
+			width: 1px;
+			height: 1px;
+			background-color: transparent;
+			border: none;
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 16px;
+				right: 0;
+				width: 10px;
+				height: 1px;
+				transform: rotate(45deg);
+				background: white;
+			}
+
+			&:after {
+				position: absolute;
+				content: "";
+				top: 16px;
+				right: 0;
+				width: 10px;
+				height: 1px;
+				transform: rotate(-45deg);
+				background: white;
+			}
+		}
+	}
+}

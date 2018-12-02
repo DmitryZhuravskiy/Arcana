@@ -6,156 +6,201 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <section class="page-header__hidden-menus">
-        <article>
-          <div>
-            <p class="visially-hidden">Click to open menu</p>
+      <div class="page-header__wrapper">
+        <section class="page-header__hidden-menus">
+          <article class="hidden-menus__menu-and-search">
+            <div class="hidden-menus__menu">
+              <p class="visially-hidden">Click to open menu</p>
+            </div>
+            <div class="hidden-menus__search">
+              <p class="visially-hidden">Click to search on site</p>
+            </div>
+          </article>
+          <div class="hidden-menus__logo">
+            <p class="visially-hidden">Arcana</p>
           </div>
-          <div>
-            <p class="visially-hidden">Click to search on site</p>
+          <article class="hidden-menus__social-and-bag">
+            <div class="hidden-menus__social">
+              <p class="visially-hidden">Click to subscribe in social</p>
+            </div>
+            <div class="hidden-menus__bag">
+              <p class="visially-hidden">Click to see your bag</p>
+              <p class="hidden-menus__number-of-bag">3</p>
+            </div>
+          </article>
+        </section>
+        <ul class="page-header__breadcrumbs">
+          <li class="page-header__breadcrumbs-link"><a href="#">Dresses</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Blouses</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Tees & Tops</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">T-Shirts</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Outerwear</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="#">Pans</a></li>
+        </ul>
+        <section class="page-header__slider">
+          <div class="wrapper">
+            <h2 class="visually-hidden">Преимущества нашей студии</h2>
+            <input class="product-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="product-2 visually-hidden" type="radio" id="product-2" name="toggle">
+            <input class="product-3 visually-hidden" type="radio" id="product-3" name="toggle">
+            <div class="slider-controls">
+              <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
+              <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
+              <label class="slider-controls-item slider-controls-item-3" for="product-3">Третий</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h2 class="slider-item__title">Tees & Tops</h2>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <a class="slider-item__button" href="#">Discover More</a>
+              </li>
+              <li class="slider-item">
+                <h2 class="slider-item__title">Blouses & T-Shirt</h2>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <a class="slider-item__button" href="#">Discover More</a>
+              </li>
+              <li class="slider-item">
+                <h2 class="slider-item__title">Outerwear & Pans</h2>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <a class="slider-item__button" href="#">Discover More</a>
+              </li>
+            </ul>
           </div>
-        </article>
-        <p>Arcana</p>
-        <article>
-          <div>
-            <p class="visially-hidden">Click to subscribe in social</p>
-          </div>
-          <div>
-            <p class="visially-hidden">Click to see your bag</p>
-            <p class="hidden-menus__number-of-bag">3</p>
-          </div>
-        </article>
-      </section>
-      <ul class="page-header__breadcrumbs">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Blouses</a></li>
-        <li><a href="#">Tees & Tops</a></li>
-        <li><a href="#">T-Shirts</a></li>
-        <li><a href="#">Outerwear</a></li>
-        <li><a href="#">Pans</a></li>
-      </ul>
-      <section class="page-header__slider">
-        <article class="page-header__slide--1">
-          <h2>Tees & Tops</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-          <a href="#">Discover More</a>
-        </article>
-      </section>
+        </section>
+      </div>
     </header>
     <main>
       <ul class="how-we-work">
-        <li class="how-we-work__discount-system">
-          <h3>Discount system</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
+        <li class="how-we-work__category how-we-work__discount-system">
+          <h3 class="how-we-work__title">Discount system</h3>
+          <p class="how-we-work__description">Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
         </li>
-        <li class="how-we-work__free-delivery">
-          <h3>Free delivery</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
+        <li class="how-we-work__category how-we-work__free-delivery">
+          <h3 class="how-we-work__title">Free delivery</h3>
+          <p class="how-we-work__description">Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
         </li>
-        <li class="how-we-work__24/7">
-          <h3>Support 24/7</h3>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
+        <li class="how-we-work__category how-we-work__24">
+          <h3 class="how-we-work__title">Support 24/7</h3>
+          <p class="how-we-work__description">Nam libero tempore, cum soluta nobis est eligendi optio, cumqu</p>
         </li>
       </ul>
       <ul class="clothing-catalog">
-        <li><a href="#">Dresses</a></li>
-        <li><a href="#">Blouses</a></li>
-        <li><a href="#">T-Shirts</a></li>
-        <li><a href="#">Outerwear</a></li>
+        <li class="clothing-catalog__card clothing-catalog__card--dresses">
+          <a class="clothing-catalog__card-link" href="#">Dresses</a>
+        </li>
+        <li class="clothing-catalog__card clothing-catalog__card--blouses">
+          <a class="clothing-catalog__card-link"  href="#">Blouses</a>
+        </li>
+        <li class="clothing-catalog__card clothing-catalog__card--t-shirts">
+          <a class="clothing-catalog__card-link" href="#">T-Shirts</a>
+        </li>
+        <li class="clothing-catalog__card clothing-catalog__card--outerwear">
+          <a class="clothing-catalog__card-link" href="#">Outerwear</a>
+        </li>
       </ul>
 
       <section class="sales-catalog">
-        <h3>Top Trending</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+        <h3 class="sales-catalog__title">Top Trending</h3>
+        <p class="sales-catalog__description"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <article class="sales-catalog__sorting">
-          <button>New products</button>
-          <button>Prices drop</button>
-          <button>Best sales</button>
+          <button class="sales-catalog__sorting-category">New products</button>
+          <button class="sales-catalog__sorting-category">Prices drop</button>
+          <button class="sales-catalog__sorting-category">Best sales</button>
         </article>
         <ul class="sales-catalog__pins">
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--1.jpg" width="348" height="464" alt="Blue blouse picture">
               <p class="pin-picture__new">New</p>
               <p class="visially-hidden">Blue blouse</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--2.jpg" width="348" height="464" alt="Blue blouse picture">
               <p class="visially-hidden">White blouse</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--3.jpg" width="348" height="464" alt="Black blouse picture">
               <p class="pin-picture__new">New</p>
               <p class="pin-picture__discount">-20%</p>
               <p class="visially-hidden">Black blouse</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00<span class="pin-price__old-price">$ 299.00</span></p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
               <p class="visially-hidden">Blue striped shirt</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <img src="image/pin--4.jpg" width="348" height="464" alt="Blue blouse picture">
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--5.jpg" width="348" height="464" alt="Blue blouse picture">
               <p class="pin-picture__discount">-20%</p>
               <p class="visially-hidden">Knitted white blouse</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00<span class="pin-price__old-price">$ 299.00</span></p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--6.jpg" width="348" height="464" alt="Blue blouse picture">
               <p class="pin-picture__discount">-20%</p>
               <p class="visially-hidden">Blue shirt</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00<span class="pin-price__old-price">$ 299.00</span></p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
               <p class="visially-hidden">Black toga</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <img src="image/pin--7.jpg" width="348" height="464" alt="Blue blouse picture">
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
               <p class="visially-hidden">Black toga</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <img src="image/pin--8.jpg" width="348" height="464" alt="Blue blouse picture">
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
+              <img src="image/pin--9.jpg" width="348" height="464" alt="Blue blouse picture">
               <p class="pin-picture__discount">-20%</p>
               <p class="visially-hidden">Beige jacket</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00<span class="pin-price__old-price">$ 299.00</span></p>
           </li>
           <li class="sales-catalog__pin">
             <div class="sales-catalog__pin-picture">
               <p class="visially-hidden">Sailor's shirt</p>
             </div>
-            <h4>Excepteur sint occaecat cupidatat</h4>
+            <img src="image/pin--10.jpg" width="348" height="464" alt="Blue blouse picture">
+            <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
         </ul>
-        <a href="#">All products</a>
+        <a class="sales-catalog__view-all" href="#">All products</a>
       </section>
       <section class="bags-and-shoes">
         <article class="bags-and-shoes__picture">
@@ -167,51 +212,51 @@
         </article>
       </section>
       <ul class="brand-links">
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="sisley-logo.png">
+            <img src="image/sisley-logo.png" width="126" height="31">
             <p class="visially-hidden">Sisley</p>
           </a>
         </li>
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="wrangler-logo.png">
+            <img src="image/wrangler-logo.png" width="119" height="36">
             <p class="visially-hidden">Wrangler</p>
           </a>
         </li>
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="fred-perry-logo.png">
+            <img src="image/fred-perry-logo.png" width="153" height="19">
             <p class="visially-hidden">Fred Perry</p>
           </a>
         </li>
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="levi's-logo.png">
+            <img src="image/levi's-logo.png" width="99" height="25">
             <p class="visially-hidden">Levi's</p>
           </a>
         </li>
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="jack-jones-logo.png">
+            <img src="image/jack-jones-logo.png" width="169" height="15">
             <p class="visially-hidden">Jack Jones</p>
           </a>
         </li>
-        <li>
+        <li class="brand-link">
           <a href="#">
-            <img src="lacoste-logo.png">
+            <img src="image/lacoste-logo.png" width="128" height="21">
             <p class="visially-hidden">Lacoste</p>
           </a>
         </li>
       </ul>
       <ul class="instagram">
-        <li class="instagram--1"></li>
-        <li class="instagram--2"></li>
-        <li class="instagram--3"></li>
-        <li class="instagram--4"></li>
-        <li class="instagram--5"></li>
-        <li class="instagram--6"></li>
-        <li class="instagram--logo">
+        <li class="instagram__photo instagram__photo--1"></li>
+        <li class="instagram__photo instagram__photo--2"></li>
+        <li class="instagram__photo instagram__photo--3"></li>
+        <li class="instagram__photo instagram__photo--4"></li>
+        <li class="instagram__photo instagram__photo--5"></li>
+        <li class="instagram__photo instagram__photo--6"></li>
+        <li class="instagram__logo">
           <p class="visially-hidden">#Instagram</p>
         </li>
       </ul>
@@ -227,51 +272,55 @@
     <footer>
       <section class="footer-container">
         <article class="footer__title-and-social">
-          <h2>Arcana</h2>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+          <h2 class="footer__title">
+            <p class="visially-hidden">Arcana</p>
+          </h2>
+          <p class="footer__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <ul class="social-links">
-            <li><a href="#"><img src="facebook-icon.png" alt="facebook"></a></li>
-            <li><a href="#"><img src="instagram-icon.png" alt="instagram"></a></li>
-            <li><a href="#"><img src="pn-icon.png" alt="pn"></a></li>
-            <li><a href="#"><img src="twitter-icon.png" alt="twitter"></a></li>
+            <li class="social-link"><a href="#"><img src="image/facebook-icon.png" alt="facebook"></a></li>
+            <li class="social-link"><a href="#"><img src="image/instagram-icon.png" alt="instagram"></a></li>
+            <li class="social-link"><a href="#"><img src="image/pn-icon.png" alt="pn"></a></li>
+            <li class="social-link"><a href="#"><img src="image/twitter-icon.png" alt="twitter"></a></li>
           </ul>
-          <form action="post">
-            <input type="text" placeholder="Enter your e-mail">
-            <input type="submit" value="Subscribe">
+          <form class="social-links__form" action="post">
+            <input class="social-links__form-email" type="text" placeholder="Enter your e-mail">
+            <input class="social-links__form-subscribe" type="submit" value="Subscribe">
           </form>
         </article>
         <article class="footer__products-links">
-          <h3>Products</h3>
-          <ul>
-            <li><a href="#">Prices drop</a></li>
-            <li><a href="#">New products</a></li>
-            <li><a href="#">Best sales</a></li>
+          <h3 class="products-links__title">Products</h3>
+          <ul class="products-links__box">
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">Prices drop</a></li>
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">New products</a></li>
+            <li class="footer__products-link"><a class="product-link__just-link" href="#">Best sales</a></li>
           </ul>
         </article>
         <article class="footer__information-links">
-          <h3>Information</h3>
-          <ul>
-            <li><a href="#">Delivery Secu</a></li>
-            <li><a href="#">Legal Notice</a></li>
-            <li><a href="#">Terms and conditions of use</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Secure payment</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Stores</a></li>
+          <h3 class="information-links__title">Information</h3>
+          <ul class="information-links__box">
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Delivery Secu</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Legal Notice</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Terms and conditions of use</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">About us</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Secure payment</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Contact us</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Sitemap</a></li>
+            <li class="footer__information-link"><a class="information-link__just-link" href="#">Stores</a></li>
           </ul>
         </article>
         <article class="footer__your-account">
-          <h3>Your account</h3>
-          <ul>
-            <li><a href="#">Addresses</a></li>
-            <li><a href="#">Credit slips</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Personal info</a></li>
+          <h3 class="your-account__title">Your account</h3>
+          <ul class="your-account__box">
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Addresses</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Credit slips</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Orders</a></li>
+            <li class="your-account__link"><a class="your-account__just-link" href="#">Personal info</a></li>
           </ul>
         </article>
       </section>
-      <section class="footer__payment"></section>
+      <section class="footer__payment">
+        <img src="image/pay-method-icons.png" alt="Methods to pay">
+      </section>
     </footer>
 
     <section class="modal-content modal-content__basket">
@@ -332,11 +381,11 @@
       </button>
     </section>
 
-    <section class="modal-content__search">
+    <section class="modal-content modal-content__search">
       <input type="text">
     </section>
 
-    <ul class="modal-content__social">
+    <ul class="modal-content modal-content__social">
       <li class="modal-content__social-facebook">
         <a href="#">
           <img src="facebook-icon.png" alt="Facebook">
@@ -363,13 +412,13 @@
       </li>
     </ul>
 
-    <ul class="modal-content__language-selector">
+    <ul class="modal-content modal-content__language-selector">
       <li><a class="modal-content__language modal-content__language-active" href="#">English</a></li>
       <li><a class="modal-content__language" href="#">French</a></li>
       <li><a class="modal-content__language" href="#">Spain</a></li>
     </ul>
     
-    <section class="modal-content__menu">
+    <section class="modal-content modal-content__menu">
       <article class="modal-content__menu-navigation">
         <div>
           <h3>T-Shirts & Blouses</h3>
@@ -396,7 +445,7 @@
           </ul>
         </div>
       </article>
-      <ul class="modal-content__menu-pins">
+      <ul class="modal-content modal-content__menu-pins">
         <li class="menu-pin menu-pin--1">
           <div class="menu-pins__picture menu-pins__picture--1"></div>
           <div>
@@ -419,7 +468,7 @@
           </div>
         </li>
       </ul>
-      <article class="modal-content__menu-logotypes">
+      <article class="modal-content modal-content__menu-logotypes">
         <div><img src="logotype.png" alt="logotype"></div>
         <div><img src="logotype.png" alt="logotype"></div>
         <div><img src="logotype.png" alt="logotype"></div>
