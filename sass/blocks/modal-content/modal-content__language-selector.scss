@@ -1,0 +1,19 @@
+.modal-content__language-selector {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	background: white;
+	padding: 0 25px 0 15px;
+
+	.language-selector__item {
+		margin: 15px 0;
+
+		.modal-content__language {
+			color: #7b7b7b;
+		}
+
+		.modal-content__language--active {
+			color: black;
+		}
+	}
+}

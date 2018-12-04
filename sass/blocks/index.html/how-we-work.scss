@@ -10,10 +10,11 @@
 
 	.how-we-work__category {
 		position: relative;
-		padding-top: 80px;
+		padding-top: 45px;
 		width: 28%;
 
 		.how-we-work__title {
+			margin: 0;
 			font-size: 14px;
 			font-weight: 500;
 			line-height: 64px;
@@ -22,6 +23,7 @@
 		}
 
 		.how-we-work__description {
+			margin: 0;
 			font-size: 13px;
 			line-height: 20px;
 			color: #929292;
@@ -60,7 +62,7 @@
 		&:before {
 			content: "";
 			position: absolute;
-			top: 0;
+			top: 15px;
 			left: calc(50% - 25px);
 			background: url(../image/person-icon.png);
 			width: 50px;

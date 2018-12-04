@@ -1,6 +1,6 @@
 .page-header__slider {
   position: relative;
-  min-height: 770px;
+  min-height: 540px;
 
   .slider-controls {
     position: absolute;
@@ -11,6 +11,7 @@
 	height: 18px;
 	text-align: center;
 	font-size: 0;
+	background: transparent;
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
@@ -21,7 +22,7 @@
 	  vertical-align: top;
 	  width: 10px;
 	  height: 10px;
-	  padding-right: 7px;
+	  margin-right: 7px;
 	  background: white;
 	  cursor: pointer;
 	}
@@ -36,21 +37,21 @@
 	  display: none;
 
 	  .slider-item__title {
-	  	margin-bottom: 35px;
+	  	margin-bottom: 15px;
 		font-size: 56px;
 		line-height: 64px;
 		color: #161918;
 	  }
 
 	  .slider-item__description {
-	  	margin-bottom: 50px;
+	  	max-width: 365px;
+	  	margin-bottom: 60px;
 		font-size: 13px;
 		line-height: 20px;
 		color: #7f7f7f;
 	  }
 
 	  .slider-item__button {
-	  	display: block;
 	  	padding: 24px 46px;
 		font-size: 11px;
 		line-height: 20px;
@@ -76,6 +77,6 @@
   .product-1:checked ~ .slider-controls .slider-controls-item-1,
   .product-2:checked ~ .slider-controls .slider-controls-item-2,
   .product-3:checked ~ .slider-controls .slider-controls-item-3 {
-    background-color: #ffffff;
+    background-color: #000000;
   }
 }

@@ -1,0 +1,29 @@
+.modal-content__social {
+	position: absolute;
+	top: 50px;
+	right: 40px;
+	display: flex;
+	display: none;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 10px;
+	background: white;
+
+	.modal-content__social-facebook,
+	.modal-content__social-instagram,
+	.modal-content__social-pinterest,
+	.modal-content__social-twitter {
+		display: flex;
+		margin: 0 12px;
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		.modal-social__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

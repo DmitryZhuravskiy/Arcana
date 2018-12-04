@@ -4,6 +4,9 @@
 
 	.sales-catalog__title {
 		position: relative;
+		padding: 20px 0;
+		margin-top: 80px;
+		margin-bottom: 30px;
 		font-size: 42px;
 		line-height: 64px;
 		font-weight: normal;
@@ -23,7 +26,7 @@
 
 	.sales-catalog__description {
 		max-width: 730px;
-		padding-bottom: 30px;
+		padding-bottom: 40px;
 		margin: 0 auto;
 		text-align: center;
 		font-size: 13px;
@@ -44,6 +47,7 @@
 			border: none;
 			width: 135px;
 			padding: 13px 0;
+			margin-bottom: 25px;
 			text-align: center;
 			background-color: #eeeeee;
 			color: #000;
@@ -78,6 +82,7 @@
 		.sales-catalog__pin {
 			position: relative;
 			height: 550px;
+			margin-bottom: 40px;
 
 			.pin-picture__new {
 				position: absolute;
@@ -128,7 +133,8 @@
 
 	.sales-catalog__view-all {
 		display: block;
-		margin: 60px auto;
+		margin: 50px auto;
+		margin-bottom: 80px;
 		width: 230px;
 		padding: 26px 0;
 		background: #000;

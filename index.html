@@ -10,15 +10,29 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <div class="page-header__wrapper">
         <section class="page-header__hidden-menus">
           <article class="hidden-menus__menu-and-search">
             <div class="hidden-menus__menu">
+              <ul class="modal-content modal-content__language-selector">
+                <li class="language-selector__item">
+                  <a class="modal-content__language modal-content__language--active" href="#">English</a>
+                </li>
+                <li class="language-selector__item">
+                  <a class="modal-content__language" href="#">French</a>
+                </li>
+                <li class="language-selector__item">
+                  <a class="modal-content__language" href="#">Spain</a>
+                </li>
+              </ul>
               <p class="visially-hidden">Click to open menu</p>
             </div>
             <div class="hidden-menus__search">
               <p class="visially-hidden">Click to search on site</p>
+              <section class="modal-content modal-content__search">
+                <input type="search">
+              </section>
             </div>
           </article>
           <div class="hidden-menus__logo">
@@ -27,6 +41,32 @@
           <article class="hidden-menus__social-and-bag">
             <div class="hidden-menus__social">
               <p class="visially-hidden">Click to subscribe in social</p>
+              <ul class="modal-content modal-content__social">
+                <li class="modal-content__social-facebook">
+                  <a class="modal-social__link" href="#">
+                    <img src="image/facebook-icon.png" alt="Facebook">
+                    <p class="visially-hidden">We in Facebook</p>
+                  </a>
+                </li>
+                <li class="modal-content__social-instagram">
+                  <a class="modal-social__link" href="#">
+                    <img src="image/instagram-icon.png" alt="Instagram">
+                    <p class="visially-hidden">We in Instagram</p>
+                  </a>
+                </li>
+                <li class="modal-content__social-pinterest">
+                  <a class="modal-social__link" href="#">
+                    <img src="image/pn-icon.png" alt="Pinterest">
+                    <p class="visially-hidden">We in Pinterest</p>
+                  </a>
+                </li>
+                <li class="modal-content__social-twitter">
+                  <a class="modal-social__link" href="#">
+                    <img src="image/twitter-icon.png" alt="Twitter">
+                    <p class="visially-hidden">We in Twitter</p>
+                  </a>
+                </li>
+              </ul>
             </div>
             <div class="hidden-menus__bag">
               <p class="visially-hidden">Click to see your bag</p>
@@ -44,10 +84,10 @@
         </ul>
         <section class="page-header__slider">
           <div class="wrapper">
-            <h2 class="visually-hidden">Преимущества нашей студии</h2>
-            <input class="product-1 visually-hidden" type="radio" id="product-1" name="toggle" checked>
-            <input class="product-2 visually-hidden" type="radio" id="product-2" name="toggle">
-            <input class="product-3 visually-hidden" type="radio" id="product-3" name="toggle">
+            <h2 class="visially-hidden">Преимущества нашей студии</h2>
+            <input class="product-1 visially-hidden" type="radio" id="product-1" name="toggle" checked>
+            <input class="product-2 visially-hidden" type="radio" id="product-2" name="toggle">
+            <input class="product-3 visially-hidden" type="radio" id="product-3" name="toggle">
             <div class="slider-controls">
               <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
               <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
@@ -56,23 +96,25 @@
             <ul class="slider-list">
               <li class="slider-item">
                 <h2 class="slider-item__title">Tees & Tops</h2>
-                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <a class="slider-item__button" href="#">Discover More</a>
               </li>
               <li class="slider-item">
                 <h2 class="slider-item__title">Blouses & T-Shirt</h2>
-                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <a class="slider-item__button" href="#">Discover More</a>
               </li>
               <li class="slider-item">
                 <h2 class="slider-item__title">Outerwear & Pans</h2>
-                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <a class="slider-item__button" href="#">Discover More</a>
               </li>
             </ul>
           </div>
         </section>
       </div>
+      <button class="page-header__button page-header__button--previous">Go previous</button>
+      <button class="page-header__button page-header__button--next">Go next</button>
     </header>
     <main>
       <ul class="how-we-work">
@@ -144,7 +186,7 @@
             <div class="sales-catalog__pin-picture">
               <p class="visially-hidden">Blue striped shirt</p>
             </div>
-            <img src="image/pin--4.jpg" width="348" height="464" alt="Blue blouse picture">
+            <img src="image/pin--10.jpg" width="348" height="464" alt="Blue blouse picture">
             <h4 class="sales-catalog__pin-title">Excepteur sint occaecat cupidatat</h4>
             <p class="sales-catalog__pin-price">$ 199.00</p>
           </li>
@@ -207,7 +249,7 @@
         </article>
         <article class="bags-and-shoes__content">
           <h4 class="bags-and-shoes__title">Bags & Shoes</h4>
-          <p class="bags-and-shoes__description">Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+          <p class="bags-and-shoes__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
           <a class="bags-and-shoes__link" href="#">Discovery more</a>
         </article>
       </section>
@@ -324,157 +366,124 @@
     </footer>
 
     <section class="modal-content modal-content__basket">
-      <h2>Shopping cart</h2>
-      <form action="post">
-        <ul>
-          <li class="card-1">
-            <div class="modal-content__pin-picture pin-picture-1"></div>
-            <div>
-              <h3>Happy intarsia crewneck sweater</h3>
-              <p class="pin-picture__size">Size: <span>S</span></p>
-              <p class="pin-picture__color">Color: <span>Blue</span></p>
-              <p class="pin-picture__price">$24.95<sub><span>х</span> 2</sub></p>
-            </div>
-            <button class="modal-content__bag-close modal-content__bag-close--1"></button>
-          </li>
-          <li class="card-2">
-            <div class="modal-content__pin-picture pin-picture-2"></div>
-            <div>
-              <h3>Happy intarsia crewneck sweater</h3>
-              <p class="pin-picture__size">Size: <span>S</span></p>
-              <p class="pin-picture__color">Color: <span>Blue</span></p>
-              <p class="pin-picture__price">$24.95<sub><span>х</span> 2</sub></p>
-            </div>
-            <button class="modal-content__bag-close modal-content__bag-close--2"></button>
-          </li>
-          <li class="card-3">
-            <div class="modal-content__pin-picture pin-picture-3"></div>
-            <div>
-              <h3>Happy intarsia crewneck sweater</h3>
-              <p class="pin-picture__size">Size: <span>S</span></p>
-              <p class="pin-picture__color">Color: <span>Blue</span></p>
-              <p class="pin-picture__price">$24.95<sub><span>х</span> 2</sub></p>
-            </div>
-            <button class="modal-content__bag-close modal-content__bag-close--3"></button>
-          </li>
-        </ul>
-        <article>
-          <p class="modal-content__bag-title">2 items</p>
-          <p class="modal-content__bag-price">42.95 $</p>
-        </article>
-        <article>
-          <p class="modal-content__bag-title">Shipping</p>
-          <p class="modal-content__bag-price">7.00 $</p>
-        </article>
-        <article>
-          <p class="modal-content__bag-title">Taxes</p>
-          <p class="modal-content__bag-price">0.00 $</p>
-        </article>
-        <article>
-          <p class="modal-content__bag-title-total">Total</p>
-          <p class="modal-content__bag-price-total">42.95 $</p>
-        </article>
-        <input type="submit" value="Processed to Checkout">
-      </form>
-      <button class="modal-content__close">
-        <p class="visially-hidden">Close to bag of goods</p>
-      </button>
+      <div class="modal-content__basket-veil">
+      </div>
+      <div class="modal-content__basket-content">
+        <h2 class="modal-content__basket-title">Shopping cart</h2>
+        <form action="post">
+          <ul>
+            <li class="modal-content__basket-card card-1">
+              <div class="modal-content__pin-picture pin-picture-1"></div>
+              <div>
+                <h3 class="modal-content__card-title">Happy intarsia crewneck sweater</h3>
+                <p class="pin-picture__size">Size: <span class="modal-content__card-subtipe">S</span></p>
+                <p class="pin-picture__color">Color: <span class="modal-content__card-subtipe">Blue</span></p>
+                <p class="pin-picture__price">$24.95<sub class="modal-content__card-sub"><span class="modal-content__card-x">х</span> 2</sub></p>
+              </div>
+              <button class="modal-content__bag-close modal-content__bag-close--1"></button>
+            </li>
+            <li class="modal-content__basket-card card-2">
+              <div class="modal-content__pin-picture pin-picture-2"></div>
+              <div>
+                <h3 class="modal-content__card-title">Happy intarsia crewneck sweater</h3>
+                <p class="pin-picture__size">Size: <span class="modal-content__card-subtipe">S</span></p>
+                <p class="pin-picture__color">Color: <span class="modal-content__card-subtipe">Blue</span></p>
+                <p class="pin-picture__price">$24.95<sub class="modal-content__card-sub"><span class="modal-content__card-x">х</span> 2</sub></p>
+              </div>
+              <button class="modal-content__bag-close modal-content__bag-close--2"></button>
+            </li>
+            <li class="modal-content__basket-card card-3">
+              <div class="modal-content__pin-picture pin-picture-3"></div>
+              <div>
+                <h3 class="modal-content__card-title">Happy intarsia crewneck sweater</h3>
+                <p class="pin-picture__size">Size: <span class="modal-content__card-subtipe">S</span></p>
+                <p class="pin-picture__color">Color: <span class="modal-content__card-subtipe">Blue</span></p>
+                <p class="pin-picture__price">$24.95<sub class="modal-content__card-sub"><span class="modal-content__card-x">х</span> 2</sub></p>
+              </div>
+              <button class="modal-content__bag-close modal-content__bag-close--3"></button>
+            </li>
+          </ul>
+          <article class="modal-content__check-bag">
+            <p class="modal-content__bag-title">2 items</p>
+            <p class="modal-content__bag-price">42.95 $</p>
+          </article>
+          <article class="modal-content__check-bag">
+            <p class="modal-content__bag-title">Shipping</p>
+            <p class="modal-content__bag-price">7.00 $</p>
+          </article>
+          <article class="modal-content__check-bag">
+            <p class="modal-content__bag-title">Taxes</p>
+            <p class="modal-content__bag-price">0.00 $</p>
+          </article>
+          <article class="modal-content__check-bag modal-content__check-bag--total">
+            <p class="modal-content__bag-title modal-content__bag-title--total">Total</p>
+            <p class="modal-content__bag-price modal-content__bag-price--total">42.95 $</p>
+          </article>
+          <input class="modal-content__bag-submit" type="submit" value="Processed to Checkout">
+        </form>
+        <button class="modal-content__bag-close">
+          <p class="visially-hidden">Close to bag of goods</p>
+        </button>
+      </div>
     </section>
-
-    <section class="modal-content modal-content__search">
-      <input type="text">
-    </section>
-
-    <ul class="modal-content modal-content__social">
-      <li class="modal-content__social-facebook">
-        <a href="#">
-          <img src="facebook-icon.png" alt="Facebook">
-          <p class="visially-hidden">We in Facebook</p>
-        </a>
-      </li>
-      <li class="modal-content__social-instagram">
-        <a href="#">
-          <img src="instagram-icon.png" alt="Instagram">
-          <p class="visially-hidden">We in Instagram</p>
-        </a>
-      </li>
-      <li class="modal-content__social-"pinterest>
-        <a href="#">
-          <img src="pn-icon.png" alt="Pinterest">
-          <p class="visially-hidden">We in Pinterest</p>
-        </a>
-      </li>
-      <li class="modal-content__social-twitter">
-        <a href="#">
-          <img src="twitter-icon.png" alt="Twitter">
-          <p class="visially-hidden">We in Twitter</p>
-        </a>
-      </li>
-    </ul>
-
-    <ul class="modal-content modal-content__language-selector">
-      <li><a class="modal-content__language modal-content__language-active" href="#">English</a></li>
-      <li><a class="modal-content__language" href="#">French</a></li>
-      <li><a class="modal-content__language" href="#">Spain</a></li>
-    </ul>
     
     <section class="modal-content modal-content__menu">
       <article class="modal-content__menu-navigation">
         <div>
-          <h3>T-Shirts & Blouses</h3>
+          <h3 class="modal-content__menu-title">T-Shirts & Blouses</h3>
           <ul>
-            <li><a href="#">Blouses</a></li>
-            <li class="modal-content__menu-special-link"><a href="#">Shirts</a></li>
-            <li><a href="#">T-Shirts</a></li>
+            <li><a class="modal-content__menu-link" href="#">Blouses</a></li>
+            <li><a class="modal-content__menu-link modal-content__menu-special-link" href="#">Shirts</a></li>
+            <li><a class="modal-content__menu-link" href="#">T-Shirts</a></li>
           </ul>
         </div>
         <div>
-          <h3>Outerwear</h3>
+          <h3 class="modal-content__menu-title">Outerwear</h3>
           <ul>
-            <li><a href="#">Coats</a></li>
-            <li><a href="#">Hoddies_&_Pullovers</a></li>
-            <li><a href="#">Jackets</a></li>
+            <li><a class="modal-content__menu-link" href="#">Coats</a></li>
+            <li><a class="modal-content__menu-link" href="#">Hoddies_&_Pullovers</a></li>
+            <li><a class="modal-content__menu-link" href="#">Jackets</a></li>
           </ul>
         </div>
         <div>
-          <h3>Warm clothes</h3>
+          <h3 class="modal-content__menu-title">Warm clothes</h3>
           <ul>
-            <li><a href="#">Cardigans</a></li>
-            <li><a href="#">Sweaters</a></li>
-            <li><a href="#">Sweatshirts</a></li>
+            <li><a class="modal-content__menu-link" href="#">Cardigans</a></li>
+            <li><a class="modal-content__menu-link" href="#">Sweaters</a></li>
+            <li><a class="modal-content__menu-link" href="#">Sweatshirts</a></li>
           </ul>
         </div>
       </article>
-      <ul class="modal-content modal-content__menu-pins">
+      <ul class="modal-content__menu-pins">
         <li class="menu-pin menu-pin--1">
           <div class="menu-pins__picture menu-pins__picture--1"></div>
           <div>
-            <h4 class="menu-pin__title"></h4>
+            <h4 class="menu-pin__title">Happy intarsia crewneck sweater</h4>
             <p class="menu-pin__price">$ 199.00<span class="menu-pin__old-price">$ 299.00</span></p>
           </div>
         </li>
         <li class="menu-pin menu-pin--2">
           <div class="menu-pins__picture menu-pins__picture--2"></div>
           <div>
-            <h4 class="menu-pin__title"></h4>
+            <h4 class="menu-pin__title">Happy intarsia crewneck sweater</h4>
             <p class="menu-pin__price">$ 199.00<span class="menu-pin__old-price">$ 299.00</span></p>
           </div>
         </li>
         <li class="menu-pin menu-pin--3">
           <div class="menu-pins__picture menu-pins__picture--3"></div>
           <div>
-            <h4 class="menu-pin__title"></h4>
+            <h4 class="menu-pin__title">Happy intarsia crewneck sweater</h4>
             <p class="menu-pin__price">$ 199.00<span class="menu-pin__old-price">$ 299.00</span></p>
           </div>
         </li>
       </ul>
-      <article class="modal-content modal-content__menu-logotypes">
-        <div><img src="logotype.png" alt="logotype"></div>
-        <div><img src="logotype.png" alt="logotype"></div>
-        <div><img src="logotype.png" alt="logotype"></div>
-        <div><img src="logotype.png" alt="logotype"></div>
-        <div><img src="logotype.png" alt="logotype"></div>
-        <div><img src="logotype.png" alt="logotype"></div>
+      <article class="modal-content__menu-logotypes">
+        <div><img src="image/logotype.png" alt="logotype"></div>
+        <div><img src="image/logotype.png" alt="logotype"></div>
+        <div><img src="image/logotype.png" alt="logotype"></div>
+        <div><img src="image/logotype.png" alt="logotype"></div>
+        <div><img src="image/logotype.png" alt="logotype"></div>
+        <div><img src="image/logotype.png" alt="logotype"></div>
       </article>
     </section>
   </body>

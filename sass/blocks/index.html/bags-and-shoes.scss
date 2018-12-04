@@ -13,17 +13,19 @@
 
 	.bags-and-shoes__content {
 		flex-grow: 25;
-		padding: 185px 0;
+		padding: 140px 0;
 
 		.bags-and-shoes__title {
 			position: relative;
 			font-size: 42px;
+			font-weight: 400;
 			text-align: center;
 			color: black;
 
 			&:before {
 				position: absolute;
-				bottom: 20px;
+				content: "";
+				bottom: -35px;
 				left: calc(50% - 52px);
 				width: 104px;
 				height: 1px;
@@ -32,6 +34,8 @@
 		}
 
 		.bags-and-shoes__description {
+			max-width: 550px;
+			margin: 0 auto;
 			margin-bottom: 30px;
 			font-size: 13px;
 			line-height: 20px;

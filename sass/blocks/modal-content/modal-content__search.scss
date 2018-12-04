@@ -1,0 +1,21 @@
+.modal-content__search {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 384px;
+	padding: 16px 16px 16px 0;
+	font-size: 20px;
+	color: black;
+
+	&:before {
+		display: block;
+		position: absolute;
+		content: "";
+		top: 22px;
+		right: 142px;
+		width: 18px;
+		height: 18px;
+		background: url("../image/search-icon.png");
+		opacity: 0.5;
+	}
+}
