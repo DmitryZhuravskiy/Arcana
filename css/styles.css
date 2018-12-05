@@ -1161,8 +1161,8 @@ input:checked + .differences-compositions:after {
       text-transform: uppercase; }
   .modal-content__basket .modal-content__bag-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 27px;
     width: 19px;
     height: 19px;
     border-radius: 50%;
@@ -1171,8 +1171,8 @@ input:checked + .differences-compositions:after {
     .modal-content__basket .modal-content__bag-close:before {
       position: absolute;
       content: "";
-      top: 35px;
-      right: 27px;
+      top: 9px;
+      right: 2px;
       width: 15px;
       height: 2px;
       background: #c2c4cc;
@@ -1180,8 +1180,8 @@ input:checked + .differences-compositions:after {
     .modal-content__basket .modal-content__bag-close:after {
       position: absolute;
       content: "";
-      top: 35px;
-      right: 27px;
+      top: 9px;
+      right: 2px;
       width: 15px;
       height: 2px;
       background: #c2c4cc;
@@ -1190,6 +1190,12 @@ input:checked + .differences-compositions:after {
       background: #000; }
     .modal-content__basket .modal-content__bag-close:hover:after {
       background: #000; }
+
+.modal-content__basket-show {
+  display: flex; }
+
+.modal-content__basket-hide {
+  display: none; }
 
 .modal-content__search {
   position: absolute;
@@ -1240,6 +1246,7 @@ input:checked + .differences-compositions:after {
       align-items: center; }
 
 .modal-content__language-selector {
+  display: none;
   position: absolute;
   top: 50px;
   left: 0;

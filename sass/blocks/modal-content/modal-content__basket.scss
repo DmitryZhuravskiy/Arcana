@@ -174,8 +174,8 @@
 
 	.modal-content__bag-close {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 30px;
+		right: 27px;
 		width: 19px;
 		height: 19px;
 		border-radius: 50%;
@@ -185,8 +185,8 @@
 		&:before {
 			position: absolute;
 			content: "";
-			top: 35px;
-			right: 27px;
+			top: 9px;
+			right: 2px;
 			width: 15px;
 			height: 2px;
 			background: #c2c4cc;
@@ -196,8 +196,8 @@
 		&:after {
 			position: absolute;
 			content: "";
-			top: 35px;
-			right: 27px;
+			top: 9px;
+			right: 2px;
 			width: 15px;
 			height: 2px;
 			background: #c2c4cc;
@@ -215,4 +215,12 @@
 			}
 		}
 	}
+}
+
+.modal-content__basket-show {
+	display: flex;
+}
+
+.modal-content__basket-hide {
+	display: none;
 }
