@@ -1,3 +1,52 @@
-
+.how-we-work {
+  max-width: 1270px;
+  min-height: 265px;
+  padding-top: 48px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top; }
+  .how-we-work .how-we-work__category {
+    position: relative;
+    padding-top: 45px;
+    width: 28%; }
+    .how-we-work .how-we-work__category .how-we-work__title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 64px;
+      color: black;
+      text-align: center; }
+    .how-we-work .how-we-work__category .how-we-work__description {
+      margin: 0;
+      font-size: 13px;
+      line-height: 20px;
+      color: #929292;
+      text-align: center; }
+  .how-we-work .how-we-work__discount-system:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 25px);
+    background: url(../image/wallet-icon.png);
+    width: 50px;
+    height: 47px; }
+  .how-we-work .how-we-work__free-delivery:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+    background: url(../image/bus-icon.png);
+    width: 39px;
+    height: 51px; }
+  .how-we-work .how-we-work__24:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 25px);
+    background: url(../image/person-icon.png);
+    width: 50px;
+    height: 41px; }
 
 /*# sourceMappingURL=how-we-work.css.map */

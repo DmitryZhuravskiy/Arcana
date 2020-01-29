@@ -2,10 +2,16 @@
 	max-width: 255px;
 
 	.footer__title {
+		display: inline-block;
+		vertical-align: top;
 		width: 190px;
 		height: 18px;
 		margin-bottom: 48px;
 		background: url("../image/logo.png") no-repeat;
+
+		&:hover {
+			opacity: 0.5;
+		} 
 	}
 
 	.footer__description {
@@ -35,6 +41,10 @@
 			&:hover {
 				background: #4e2e2e;
 			}
+
+			&:active {
+				background: #ba2f46;
+			}
 		}
 	}
 	
@@ -49,6 +59,14 @@
 			padding: 18px;
 			border: 1px #dfdfdf solid;
 			box-sizing: border-box;
+
+			&:hover {
+				border-color: black;
+			}
+
+			&:active {
+				border-color: #ba2f46;
+			}
 		}
 
 		.social-links__form-subscribe {
@@ -61,6 +79,11 @@
 
 			&:hover {
 				background: black;
+				color: white;
+			}
+
+			&:active {
+				background: #ba2f46;
 				color: white;
 			}
 		}

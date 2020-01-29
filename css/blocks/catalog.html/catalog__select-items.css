@@ -1,3 +1,15 @@
-
+.catalog__select-items {
+  min-width: 400px;
+  width: 842px; }
+  .catalog__select-items .select-items__title {
+    margin-bottom: 26px;
+    font-size: 32px;
+    line-height: 36px;
+    color: black; }
+  .catalog__select-items .select-items__description {
+    margin-bottom: 48px;
+    font-size: 13px;
+    line-height: 20px;
+    color: black; }
 
 /*# sourceMappingURL=catalog__select-items.css.map */

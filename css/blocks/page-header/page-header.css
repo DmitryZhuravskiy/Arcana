@@ -1,3 +1,74 @@
+.page-header {
+  width: 100%;
+  min-height: 900px;
+  background: url(../image/header-background.jpg) no-repeat;
+  background-size: cover;
+  border-bottom: 1px #d4d4d4 solid;
+  box-sizing: border-box; }
+  .page-header .page-header__wrapper {
+    width: 60%;
+    margin: 0 auto; }
 
+.page-header--index {
+  position: relative; }
+  .page-header--index .page-header__button {
+    position: absolute;
+    top: calc(50% - 26px);
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px white solid;
+    background: #e7e7e7; }
+    .page-header--index .page-header__button:before {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: 15px;
+      width: 13px;
+      height: 3px;
+      background: #c8c8c8;
+      transform: rotate(45deg); }
+    .page-header--index .page-header__button:after {
+      position: absolute;
+      content: "";
+      top: 16px;
+      left: 15px;
+      width: 13px;
+      height: 3px;
+      background: #c8c8c8;
+      transform: rotate(-45deg); }
+    .page-header--index .page-header__button:hover {
+      background: #292929; }
+    .page-header--index .page-header__button:active {
+      background: #af2d42; }
+  .page-header--index .page-header__button--previous {
+    left: 12px; }
+  .page-header--index .page-header__button--next {
+    right: 12px; }
+    .page-header--index .page-header__button--next:before {
+      position: absolute;
+      content: "";
+      top: 16px;
+      right: 15px;
+      width: 13px;
+      height: 3px;
+      background: #c8c8c8;
+      transform: rotate(45deg); }
+    .page-header--index .page-header__button--next:after {
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 15px;
+      width: 13px;
+      height: 3px;
+      background: #c8c8c8;
+      transform: rotate(-45deg); }
+
+.page-header--catalog {
+  min-height: 120px;
+  margin-bottom: -150px;
+  background-image: none;
+  border-bottom: none; }
 
 /*# sourceMappingURL=page-header.css.map */

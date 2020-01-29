@@ -1,3 +1,10 @@
-
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1108px;
+  padding: 65px 0;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=footer.css.map */

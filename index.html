@@ -75,7 +75,7 @@
           </article>
         </section>
         <ul class="page-header__breadcrumbs">
-          <li class="page-header__breadcrumbs-link"><a href="#">Dresses</a></li>
+          <li class="page-header__breadcrumbs-link"><a href="catalog.html">Dresses</a></li>
           <li class="page-header__breadcrumbs-link"><a href="#">Blouses</a></li>
           <li class="page-header__breadcrumbs-link"><a href="#">Tees & Tops</a></li>
           <li class="page-header__breadcrumbs-link"><a href="#">T-Shirts</a></li>
@@ -97,24 +97,24 @@
               <li class="slider-item">
                 <h2 class="slider-item__title">Tees & Tops</h2>
                 <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="slider-item__button" href="#">Discover More</a>
+                <a class="slider-item__button" href="catalog.html">Discover More</a>
               </li>
               <li class="slider-item">
                 <h2 class="slider-item__title">Blouses & T-Shirt</h2>
                 <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="slider-item__button" href="#">Discover More</a>
+                <a class="slider-item__button" href="catalog.html">Discover More</a>
               </li>
               <li class="slider-item">
                 <h2 class="slider-item__title">Outerwear & Pans</h2>
                 <p class="slider-item__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <a class="slider-item__button" href="#">Discover More</a>
+                <a class="slider-item__button" href="catalog.html">Discover More</a>
               </li>
             </ul>
           </div>
         </section>
       </div>
-      <button class="page-header__button page-header__button--previous">Go previous</button>
-      <button class="page-header__button page-header__button--next">Go next</button>
+      <button class="page-header__button page-header__button--previous" onclick="return nextButtonHandler();">Go previous</button>
+      <button class="page-header__button page-header__button--next" onclick="return backButtonHandler();">Go next</button>
     </header>
     <main>
       <ul class="how-we-work">
@@ -133,7 +133,7 @@
       </ul>
       <ul class="clothing-catalog">
         <li class="clothing-catalog__card clothing-catalog__card--dresses">
-          <a class="clothing-catalog__card-link" href="#">Dresses</a>
+          <a class="clothing-catalog__card-link" href="catalog.html">Dresses</a>
         </li>
         <li class="clothing-catalog__card clothing-catalog__card--blouses">
           <a class="clothing-catalog__card-link"  href="#">Blouses</a>
@@ -421,7 +421,7 @@
           </article>
           <input class="modal-content__bag-submit" type="submit" value="Processed to Checkout">
         </form>
-        <button class="modal-content__bag-close" type="button">
+        <button class="modal-content__basket-close" type="button">
           <p class="visially-hidden">Close to bag of goods</p>
         </button>
       </div>
@@ -485,7 +485,9 @@
         <div><img src="image/logotype.png" alt="logotype"></div>
         <div><img src="image/logotype.png" alt="logotype"></div>
       </article>
+      <button class="modal-content__menu-close"></button>
     </section>
     <script type="text/javascript" src="js/modal-content__basket.js"></script>
+    <script type="text/javascript" src="js/header__slider.js"></script>
   </body>
 </html>

@@ -1,3 +1,67 @@
-
+.page-header__slider {
+  position: relative;
+  min-height: 540px; }
+  .page-header__slider .slider-controls {
+    position: absolute;
+    left: 0%;
+    bottom: 34px;
+    z-index: 10;
+    width: 160px;
+    height: 18px;
+    text-align: center;
+    font-size: 0;
+    background: transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .page-header__slider .slider-controls .slider-controls-item {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+      background: white;
+      cursor: pointer; }
+  .page-header__slider .slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .page-header__slider .slider-list .slider-item {
+      display: none; }
+      .page-header__slider .slider-list .slider-item .slider-item__title {
+        margin-bottom: 15px;
+        font-size: 56px;
+        line-height: 64px;
+        color: #161918; }
+      .page-header__slider .slider-list .slider-item .slider-item__description {
+        max-width: 365px;
+        margin-bottom: 60px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #7f7f7f; }
+      .page-header__slider .slider-list .slider-item .slider-item__button {
+        padding: 24px 46px;
+        font-size: 11px;
+        line-height: 20px;
+        color: #ffffff;
+        background-color: #000000;
+        cursor: pointer; }
+        .page-header__slider .slider-list .slider-item .slider-item__button:hover {
+          color: #000000;
+          background-color: #ffffff; }
+        .page-header__slider .slider-list .slider-item .slider-item__button:active {
+          color: #dddddd;
+          background-color: #af2d42; }
+  .page-header__slider .product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+    display: block; }
+  .page-header__slider .product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+    display: block; }
+  .page-header__slider .product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+    display: block; }
+  .page-header__slider .product-1:checked ~ .slider-controls .slider-controls-item-1,
+  .page-header__slider .product-2:checked ~ .slider-controls .slider-controls-item-2,
+  .page-header__slider .product-3:checked ~ .slider-controls .slider-controls-item-3 {
+    background-color: #000000; }
 
 /*# sourceMappingURL=page-header__slider.css.map */

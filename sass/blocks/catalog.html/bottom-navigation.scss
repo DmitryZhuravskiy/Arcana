@@ -46,6 +46,22 @@
 				}
 			}
 
+			&:active {
+				background: #ba2f46;
+
+				.page-number {
+					color: #fff;
+				}
+
+				&:before {
+					background: white;
+				}
+
+				&:after {
+					background: white;
+				}
+			}
+
 			.page-number {
 				color: #000;
 			}

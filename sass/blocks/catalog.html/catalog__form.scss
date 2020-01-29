@@ -16,7 +16,7 @@
 		&:before {
 			content: "";
 			position: absolute;
-			right: 12px;
+			right: 22px;
 			top: 15px;
 			width: 7px;
 			height: 1px;
@@ -27,7 +27,7 @@
 		&:after {
 			content: "";
 			position: absolute;
-			right: 8px;
+			right: 18px;
 			top: 15px;
 			width: 7px;
 			height: 1px;
@@ -36,9 +36,10 @@
 		}
 	}
 
-	.catalog-item__top--active,
-	.catalog-item__t-shirt-and-blouses--active {
+	.catalog-item__top,
+	.catalog-item__t-shirt-and-blouses {
 		position: relative;
+		cursor: pointer;
 
 		&:before {
 			content: "";
@@ -70,14 +71,25 @@
 		color: #929292;
 	}
 
-	.catalog-item__top-subtipe--active {
-		display: block;
-	}
+//	.catalog-item__top-subtipe--active {
+//		display: block;
+//	}
 
-	.catalog__subtipe {
+	.catalog__subtipe,
+	.catalog-item__t-shirt-subtipe {
 
-		&:hover {
-			color: black;
+		.catalog__subtipe {
+			font-size: 12px;
+			text-transform: none;
+			color: #929292;
+
+			&:hover {
+				color: black;
+			}
+
+			&:active {
+				color: #ba2f46;
+			}
 		}
 	}
 

@@ -1,3 +1,125 @@
-
+.sales-catalog {
+  width: 95%;
+  margin: 0 auto; }
+  .sales-catalog .sales-catalog__title {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 64px;
+    font-weight: normal;
+    color: #161918;
+    text-align: center; }
+    .sales-catalog .sales-catalog__title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 52px);
+      width: 104px;
+      height: 1px;
+      background: #cfcfcf; }
+  .sales-catalog .sales-catalog__description {
+    max-width: 730px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    color: #929292; }
+  .sales-catalog .sales-catalog__sorting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 445px;
+    margin: 0 auto; }
+    .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category {
+      display: block;
+      position: relative;
+      border: none;
+      width: 135px;
+      padding: 13px 0;
+      margin-bottom: 25px;
+      text-align: center;
+      background-color: #eeeeee;
+      color: #000;
+      cursor: pointer; }
+      .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category:before {
+        content: "";
+        position: absolute;
+        bottom: -27px;
+        left: calc(50% - 7px);
+        border: 14px solid transparent;
+        border-top: 14px solid #eeeeee; }
+      .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category:hover {
+        background-color: #292929;
+        color: #fff; }
+        .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category:hover:before {
+          border-top-color: #292929; }
+      .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category:active {
+        background-color: #ba2f46;
+        color: #fff; }
+        .sales-catalog .sales-catalog__sorting .sales-catalog__sorting-category:active:before {
+          border-top-color: #ba2f46; }
+  .sales-catalog .sales-catalog__pins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .sales-catalog .sales-catalog__pins .sales-catalog__pin {
+      position: relative;
+      height: 550px;
+      margin-bottom: 40px; }
+      .sales-catalog .sales-catalog__pins .sales-catalog__pin .pin-picture__new {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 50px;
+        padding: 8px 0;
+        font-size: 12px;
+        text-align: center;
+        background: black;
+        color: white; }
+      .sales-catalog .sales-catalog__pins .sales-catalog__pin .pin-picture__discount {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 50px;
+        padding: 8px 0;
+        font-size: 12px;
+        text-align: center;
+        background: #c55353;
+        color: white; }
+      .sales-catalog .sales-catalog__pins .sales-catalog__pin .sales-catalog__pin-title {
+        font-size: 14px;
+        color: black;
+        text-align: center; }
+      .sales-catalog .sales-catalog__pins .sales-catalog__pin .sales-catalog__pin-price {
+        font-size: 16px;
+        color: #929292;
+        text-align: center;
+        vertical-align: middle; }
+        .sales-catalog .sales-catalog__pins .sales-catalog__pin .sales-catalog__pin-price .pin-price__old-price {
+          padding-left: 12px;
+          margin-bottom: 8px;
+          font-size: 13px;
+          text-decoration: line-through;
+          vertical-align: middle; }
+  .sales-catalog .sales-catalog__view-all {
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 80px;
+    width: 230px;
+    padding: 26px 0;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center; }
+    .sales-catalog .sales-catalog__view-all:hover {
+      background: #eee;
+      color: #000; }
+    .sales-catalog .sales-catalog__view-all:active {
+      background: #ba2f46;
+      color: #000; }
 
 /*# sourceMappingURL=sales-catalog.css.map */

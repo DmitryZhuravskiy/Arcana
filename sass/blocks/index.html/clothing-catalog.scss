@@ -28,6 +28,11 @@
 			background-color: black;
 			color: white;
 		}
+
+		&:active {
+			background-color: black;
+			color: #ba2f46;
+		}
 	}
 
 	.clothing-catalog__card--dresses {

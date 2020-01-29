@@ -70,6 +70,15 @@
 					border-top-color:  #292929;	
 				}
 			}
+
+			&:active {
+				background-color: #ba2f46;
+				color: #fff;
+			
+				&:before {
+					border-top-color:  #ba2f46;	
+				}
+			}
 		}
 	}
 
@@ -144,6 +153,11 @@
 
 		&:hover {
 			background: #eee;
+			color: #000;
+		}
+
+		&:active {
+			background: #ba2f46;
 			color: #000;
 		}
 	}

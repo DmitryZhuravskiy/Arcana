@@ -1,11 +1,11 @@
 var link = document.querySelector(".hidden-menus__bag");
 var popup = document.querySelector(".modal-content__basket");
-var close = popup.querySelector(".modal-content__bag-close");
+var close = popup.querySelector(".modal-content__basket-close");
 
 
 var menuOpen = document.querySelector(".hidden-menus__logo");
 var popupMenu = document.querySelector(".modal-content__menu");
-var closeMenu = popupMenu.querySelector(".menu-pins__picture--3");
+var closeMenu = popupMenu.querySelector(".modal-content__menu-close");
 
 var languageOpen = document.querySelector(".hidden-menus__menu");
 var popupLanguage = document.querySelector(".modal-content__language-selector");
@@ -15,6 +15,12 @@ var popupSocial = document.querySelector(".modal-content__social");
 
 var searchOpen = document.querySelector(".hidden-menus__search");
 var popupSearch = document.querySelector(".modal-content__search");
+
+var catalogTop = document.querySelector(".catalog-item__top");
+var catalogTopSubtipe = document.querySelector(".catalog-item__top-subtipe");
+
+var catalogTShirt = document.querySelector(".catalog-item__t-shirt-and-blouses");
+var catalogTShirtSubtipe = document.querySelector(".catalog-item__t-shirt-subtipe");
   
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -65,3 +71,20 @@ searchOpen.onclick = function() {
 };
 
 
+catalogTop.onclick = function() {
+    if (catalogTopSubtipe.style.display !== 'none') {
+        catalogTopSubtipe.style.display = 'none';
+    }
+    else {
+        catalogTopSubtipe.style.display = 'block';
+    }
+};
+
+catalogTShirt.onclick = function() {
+    if (catalogTShirtSubtipe.style.display !== 'none') {
+        catalogTShirtSubtipe.style.display = 'none';
+    }
+    else {
+        catalogTShirtSubtipe.style.display = 'block';
+    }
+};

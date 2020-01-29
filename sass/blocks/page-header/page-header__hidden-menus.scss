@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	position: relative;
 	padding: 30px 0;
 
@@ -9,21 +10,40 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
+		align-items: center;
 
 		.hidden-menus__menu {
 			width: 18px;
 			height: 12px;
 			margin-right: 25px;
-			background: url("../image/burger-icon.png");
+			background: url("../image/burger-icon.svg");
 			cursor: pointer;
+			box-sizing: border-box;
+
+			&:hover {
+				background: url("../image/burger-icon--hover.svg");
+			}
+
+			&:active {
+				background: url("../image/burger-icon--active.svg");
+			}
 		}
 
 		.hidden-menus__search {
 			position: relative;
-			width: 18px;
-			height: 18px;
-			background: url("../image/search-icon.png");
+			width: 17px;
+			height: 17px;
+			background: url("../image/search-icon.svg");
 			cursor: pointer;
+			box-sizing: border-box;
+
+			&:hover {
+				background: url("../image/search-icon--hover.svg");
+			}
+
+			&:active {
+				background: url("../image/search-icon--active.svg");
+			}
 		}
 	}
 
@@ -32,6 +52,15 @@
 		height: 18px;
 		background: url("../image/logo.png");
 		cursor: pointer;
+		box-sizing: border-box;
+
+		&:hover {
+			opacity: 0.5;
+		}
+
+		&:active {
+			opacity: 0.8;
+		}
 	}
 
 	.hidden-menus__social-and-bag {
@@ -42,8 +71,17 @@
 		.hidden-menus__social {
 			width: 15px;
 			height: 17px;
-			background: url(../image/social-icon.png);
+			background: url(../image/social-icon.svg);
 			cursor: pointer;
+			box-sizing: border-box;
+
+			&:hover {
+				background: url(../image/social-icon--hover.svg);
+			}
+
+			&:active {
+				background: url(../image/social-icon--active.svg);
+			}
 		}
 
 		.hidden-menus__bag {
@@ -51,8 +89,17 @@
 			width: 20px;
 			height: 19px;
 			margin-left: 25px;
-			background: url("../image/portfolio-icon.png");
+			background: url("../image/portfolio-icon.svg");
 			cursor: pointer;
+			box-sizing: border-box;
+
+			&:hover {
+				background: url("../image/portfolio-icon--hover.svg");
+			}
+
+			&:active {
+				background: url("../image/portfolio-icon--active.svg");
+			}
 
 			.hidden-menus__number-of-bag {
 				position: absolute;

@@ -1,3 +1,126 @@
-
+.modal-content__menu {
+  display: flex;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 145px;
+  left: calc(50% - 555px);
+  width: 1110px;
+  height: 440px;
+  padding: 35px 30px;
+  background: white;
+  box-sizing: border-box; }
+  .modal-content__menu .modal-content__menu-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 350px; }
+    .modal-content__menu .modal-content__menu-navigation .modal-content__menu-title {
+      margin-bottom: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      color: black;
+      text-transform: uppercase; }
+    .modal-content__menu .modal-content__menu-navigation .modal-content__menu-link {
+      display: block;
+      margin-bottom: 10px;
+      color: black; }
+      .modal-content__menu .modal-content__menu-navigation .modal-content__menu-link:hover {
+        color: #929292; }
+      .modal-content__menu .modal-content__menu-navigation .modal-content__menu-link:active {
+        color: #b82f45; }
+    .modal-content__menu .modal-content__menu-navigation .modal-content__menu-special-link {
+      position: relative;
+      padding-left: 30px; }
+      .modal-content__menu .modal-content__menu-navigation .modal-content__menu-special-link:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 2px;
+        width: 17px;
+        height: 1px;
+        background: black; }
+  .modal-content__menu .modal-content__menu-pins .menu-pin {
+    position: relative;
+    min-height: 106px;
+    width: 180px; }
+    .modal-content__menu .modal-content__menu-pins .menu-pin .menu-pin__title {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: black; }
+    .modal-content__menu .modal-content__menu-pins .menu-pin .menu-pin__price {
+      font-size: 16px;
+      color: #929292; }
+    .modal-content__menu .modal-content__menu-pins .menu-pin .menu-pin__old-price {
+      margin-left: 11px;
+      font-size: 13px;
+      text-decoration: line-through; }
+  .modal-content__menu .modal-content__menu-pins .menu-pins__picture--1 {
+    position: absolute;
+    top: 0;
+    left: -95px;
+    width: 77px;
+    height: 102px;
+    background: url("../image/modal-content__pin-picture-1.png"); }
+  .modal-content__menu .modal-content__menu-pins .menu-pins__picture--2 {
+    position: absolute;
+    top: 0;
+    left: -95px;
+    width: 77px;
+    height: 102px;
+    background: url("../image/modal-content__pin-picture-2.png"); }
+  .modal-content__menu .modal-content__menu-pins .menu-pins__picture--3 {
+    position: absolute;
+    top: 0;
+    left: -95px;
+    width: 77px;
+    height: 102px;
+    background: url("../image/modal-content__pin-picture-3.png"); }
+  .modal-content__menu .modal-content__menu-logotypes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .modal-content__menu .modal-content__menu-close {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px #8f8f8f solid; }
+    .modal-content__menu .modal-content__menu-close:before {
+      content: '';
+      position: absolute;
+      bottom: 17px;
+      left: 5px;
+      width: 27px;
+      height: 3px;
+      background: #8f8f8f;
+      transform: rotate(-45deg); }
+    .modal-content__menu .modal-content__menu-close:after {
+      content: '';
+      position: absolute;
+      bottom: 17px;
+      left: 5px;
+      width: 27px;
+      height: 3px;
+      background: #8f8f8f;
+      transform: rotate(45deg); }
+    .modal-content__menu .modal-content__menu-close:hover {
+      border-color: black; }
+      .modal-content__menu .modal-content__menu-close:hover:before {
+        background: black; }
+      .modal-content__menu .modal-content__menu-close:hover:after {
+        background: black; }
+    .modal-content__menu .modal-content__menu-close:active {
+      border-color: #93735e; }
+      .modal-content__menu .modal-content__menu-close:active:before {
+        background: #93735e; }
+      .modal-content__menu .modal-content__menu-close:active:after {
+        background: #93735e; }
 
 /*# sourceMappingURL=modal-content__menu.css.map */

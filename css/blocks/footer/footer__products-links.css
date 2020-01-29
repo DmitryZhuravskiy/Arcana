@@ -1,3 +1,14 @@
-
+.footer__products-links .products-links__title {
+  margin-bottom: 45px;
+  font-size: 16px;
+  color: black; }
+.footer__products-links .products-links__box .footer__products-link {
+  padding-bottom: 15px; }
+  .footer__products-links .products-links__box .footer__products-link .product-link__just-link {
+    color: #929292; }
+    .footer__products-links .products-links__box .footer__products-link .product-link__just-link:hover {
+      color: black; }
+    .footer__products-links .products-links__box .footer__products-link .product-link__just-link:active {
+      color: #ba2f46; }
 
 /*# sourceMappingURL=footer__products-links.css.map */
