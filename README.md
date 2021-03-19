@@ -7,6 +7,7 @@ Clothing Store
 <br /><br />
 
 <b>Стартовая страница</b>
+<br />
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--1.jpg "/>
 <br /><br />
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--2.jpg "/>
