@@ -22,8 +22,9 @@ Clothing Store
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--7.jpg "/>
 <br /><br />
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--8.jpg "/>
-<br /><br />
+<br /><br /><br />
 <b>Страница каталога</b>
+<br />
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--9.jpg "/>
 <br /><br />
 <img src="https://github.com/DmitryZhuravskiy/Arcana/raw/2018-version/image/arkana--10.jpg "/>
