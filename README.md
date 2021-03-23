@@ -1,7 +1,7 @@
 <h1><b>Arcana</b></h1>
 
-Презентационная версия - https://dmitryzhuravskiy.github.io/Arcana/ ;<br />
-а также https://codesandbox.io/s/arcana-x10c1 ;
+Презентационная версия - https://dmitryzhuravskiy.github.io/Arcana/ <br />
+а также https://codesandbox.io/s/arcana-x10c1 
 <br /><br />
 
 <h2><b>Руководство по запуску</b></h2>
