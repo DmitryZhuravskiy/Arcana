@@ -12,7 +12,7 @@ another link https://codesandbox.io/s/arcana-x10c1
 <br /><br />
 <h2><b>Description of the project</b></h2>
 
-Это двустраничный сайт типо магазина одежды. Переход на вторую страницу осуществляется нажатием на ссылку dress в шапке или 'Discover more' чуть ниже. Переход же со страницы catalog на главную доступен через нажатие на логотоп-ссылку в футере слева. Так же в лендинге есть 5 всплывающих окон, доступных при нажатии на кнопки сверху. Закрываются повторным нажатием, однако модальное окно корзины покупки имеет кнопку убрать в виде крестика. На странице каталога возможно по щелчку справа открыть подсписок при выборе параметров поиска. Сайты не расчитаны на использование на экранах меньше 1000px, т.е. сайт не адаптивный. Все, что кливается, подсвечивается.
+This is a two-page clothing store website. The transition to the second page is carried out by clicking on the link <dress> in header or 'Discover more' below. The transition from the page <catalog> home is available by clicking on the logo link in the footer on the left. Also, the landing page has 5 pop-up windows available by clicking on the buttons at the top. They are closed by pressing again, but the modal window of the shopping cart has a remove button in the form of a cross.On the catalog page, clicking on the right opens a sub-list when you select search parameters. Websites are not designed for use on screens smaller than 1000px, i.e. the site is not responsive. Anything that is clipped is highlighted.
 <br /><br />
 
 <b>Start page</b>
