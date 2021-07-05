@@ -1,12 +1,12 @@
 <h1><b>Arcana</b></h1>
 
-Презентационная версия - https://dmitryzhuravskiy.github.io/Arcana/ <br />
-а также https://codesandbox.io/s/arcana-x10c1 
+Presentation - https://dmitryzhuravskiy.github.io/Arcana/ <br />
+another link https://codesandbox.io/s/arcana-x10c1 
 <br /><br />
 
-<h2><b>Руководство по запуску</b></h2>
-<b>1.</b> git clonehttps://github.com/DmitryZhuravskiy/Arcana.git <i> - копируем репозиторий;</i><br />
-<b>2.</b> cd ./Arcana <i>- переходим в папку с локальной версией;</i><br />
+<h2><b>Startup Guide</b></h2>
+<b>1.</b> git clonehttps://github.com/DmitryZhuravskiy/Arcana.git<i> - clone repository;</i><br />
+<b>2.</b> cd ./Arcana <i>- go to the folder with the local version;</i><br />
 <b>3.</b> git checkout 2018-version <i>- переходим в папку с локальной версией;</i><br />
 <b>4.</b> запускаем index.html из скаченной папки двойным кликом, например<i>- проект запустится в браузере;</i><br />
 <br /><br />
