@@ -1,7 +1,7 @@
 <h1><b>Arcana</b></h1>
 
 Presentation - https://dmitryzhuravskiy.github.io/Arcana/ <br />
-another link https://codesandbox.io/s/arcana-x10c1 
+another link https://codesandbox.io/s/arcana-x10c1 ;
 <br /><br />
 
 <h2><b>Startup Guide</b></h2>
